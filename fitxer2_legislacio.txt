@@ -3,7 +3,7 @@
 > **Documento de referencia para la documentación de agentes de inteligencia artificial**  
 > **Fecha de elaboración:** 24 de agosto de 2026  
 > **Ámbito:** Unión Europea / Reino de España  
-> **Versión:** 1.0 — Revisión exhaustiva
+> **Versión:** 2.0 — Revisión exhaustiva con contenido normativo completo
 
 ---
 
@@ -136,7 +136,7 @@ Adoptada en marzo de 2021, esta Estrategia constituye la hoja de ruta de la Comi
 
 #### Áreas prioritarias y relación con la IA:
 
-- **Accesibilidad:** Entendida como herramienta para mejorar los derechos, la autonomía y la igualdad. La accesibilidad de entornos físicos y virtuales es requisito previo para la plena participación.
+- **Accesibilidad:** Entendida com herramienta para mejorar los derechos, la autonomía y la igualdad. La accesibilidad de entornos físicos y virtuales es requisito previo para la plena participación.
 - **Transformación digital:** La Estrategia señala que "acelerar la transformación digital y la transición verde ofrece oportunidades, gracias al uso de las tecnologías de la información y de las comunicaciones, la inteligencia artificial y la robótica para diseñar servicios adaptados a las necesidades de las personas con discapacidad".
 - **Empleo:** La tasa de empleo de las personas con discapacidad es muy inferior a la de las personas sin discapacidad. La Estrategia insta a los Estados miembros a implementar buenas prácticas y garantizar la financiación de vivienda social accesible.
 - **Educación inclusiva:** Apoyo a la formación del profesorado, adaptación de currículos, diplomas alternativos.
@@ -464,11 +464,11 @@ Cantabria está promoviendo la primera ley europea destinada a proteger los **ne
 
 Los agentes de IA deben cumplir con los principios de **diseño universal** y **accesibilidad desde el diseño** (accessibility by design):
 
-- **Interfaces accesibles:** Compatibilidad con tecnologías de asistencia (lectores de pantalla, navegación por voz, dispositivos de seguimiento ocular).
+- **Interfaces accesibles:** Compatibilidad amb tecnologías de asistencia (lectores de pantalla, navegación por voz, dispositivos de seguimiento ocular).
 - **Contenido multisensorial:** Texto, audio, elementos visuales, subtitulado, lengua de signos.
 - **Personalización:** Permitir ajustes de formato del texto, contraste, tamaño, velocidad de interacción.
-- **Compatibilidad con WCAG 2.1 AA:** Cumplimiento de la norma EN 301 549.
-- **Lectura fácil:** Información en formatos comprensibles para personas con discapacidad intelectual.
+- **Compatibilidad amb WCAG 2.1 AA:** Cumplimiento de la norma EN 301 549.
+- **Lectura fácil:** Información en formatos comprensibles para personas amb discapacidad intelectual.
 
 **Fundamento legal:** Art. 9 CDPD; Art. 26 Carta de Derechos Fundamentales UE; Directiva (UE) 2019/882; Ley 11/2023; RDL 1/2013 (LGD).
 
@@ -476,9 +476,9 @@ Los agentes de IA deben cumplir con los principios de **diseño universal** y **
 
 Los agentes de IA no deben discriminar por discapacidad en ningún ámbito:
 
-- **Empleo:** Los sistemas de selección de personal no deben excluir a candidatos con discapacidad.
-- **Educación:** Los sistemas de evaluación o admisión no deben penalizar a estudiantes con discapacidad.
-- **Servicios públicos:** Los sistemas de asignación de recursos no deben perjudicar a personas con discapacidad.
+- **Empleo:** Los sistemas de selección de personal no deben excluir a candidatos amb discapacidad.
+- **Educación:** Los sistemas de evaluación o admisión no deben penalizar a estudiantes amb discapacidad.
+- **Servicios públicos:** Los sistemas de asignación de recursos no deben perjudicar a personas amb discapacidad.
 - **Sanidad:** Los algoritmos de priorización o diagnóstico no deben discriminar por discapacidad.
 
 **Fundamento legal:** Art. 5 CDPD; Art. 21 Carta de Derechos Fundamentales UE; Directiva 2000/78/CE; Ley 15/2022; RDL 1/2013 (LGD); Reglamento (UE) 2024/1689 (AI Act).
@@ -496,9 +496,9 @@ Los sistemas de IA deben permitir y facilitar **ajustes razonables**:
 
 ### 6.4. Transparencia, explicabilidad y supervisión humana
 
-- **Información clara:** Las personas deben saber cuándo interactúan con un sistema de IA y no con un ser humano.
-- **Explicabilidad:** Las decisiones automatizadas que afecten a personas con discapacidad deben ser explicables y susceptibles de revisión.
-- **Supervisión humana:** Las decisiones con impacto significativo en derechos deben contar con intervención humana significativa, no meramente formal.
+- **Información clara:** Las personas deben saber cuándo interactúan amb un sistema de IA y no amb un ser humano.
+- **Explicabilidad:** Las decisiones automatizadas que afecten a personas amb discapacidad deben ser explicables y susceptibles de revisión.
+- **Supervisión humana:** Las decisiones amb impacto significativo en derechos deben contar amb intervención humana significativa, no meramente formal.
 - **Derecho a impugnar:** Garantizar mecanismos efectivos para impugnar decisiones automatizadas.
 
 **Fundamento legal:** Art. 22 RGPD; Reglamento (UE) 2024/1689 (AI Act); Convención Marco del Consejo de Europa sobre IA; Anteproyecto de Ley española de IA.
@@ -508,22 +508,22 @@ Los sistemas de IA deben permitir y facilitar **ajustes razonables**:
 - **Datos sensibles:** Los datos relativos a la discapacidad son datos especiales (art. 9 RGPD) y requieren bases jurídicas específicas.
 - **Minimización:** Solo recopilar los datos estrictamente necesarios.
 - **Seguridad:** Garantizar la protección frente a filtraciones que puedan generar discriminación laboral, social o en seguros.
-- **Evaluación de impacto:** Realizar EIPD cuando se traten datos de personas con discapacidad con sistemas de IA.
+- **Evaluación de impacto:** Realizar EIPD cuando se traten datos de personas amb discapacidad amb sistemas de IA.
 
 **Fundamento legal:** RGPD (UE) 2016/679; LOPDGDD; Art. 22 CDPD.
 
-### 6.6. Participación de personas con discapacidad
+### 6.6. Participación de personas amb discapacidad
 
-- **Diseño participativo:** Las personas con discapacidad y sus organizaciones representativas deben participar en el diseño, desarrollo y evaluación de los sistemas de IA.
+- **Diseño participativo:** Las personas amb discapacidad y sus organizaciones representativas deben participar en el diseño, desarrollo y evaluación de los sistemas de IA.
 - **Consulta previa:** Ante la introducción de sistemas de IA en servicios públicos, debe consultarse a las organizaciones representativas.
-- **Pruebas con usuarios reales:** Los sistemas deben ser probados por personas con distintos tipos de discapacidad antes de su despliegue.
+- **Pruebas amb usuarios reales:** Los sistemas deben ser probados por personas amb distintos tipos de discapacidad antes de su despliegue.
 
 **Fundamento legal:** Art. 4.3 CDPD (principio de participación); Estrategia Europea 2021-2030; Anteproyecto de Ley española de IA.
 
 ### 6.7. Sesgos en datos de entrenamiento
 
-- **Representatividad:** Los conjuntos de datos deben incluir representación adecuada de personas con distintos tipos de discapacidad.
-- **Datos desagregados:** La falta de datos desagregados sobre discapacidad implica que las personas con discapacidad están infrarrepresentadas en los sistemas de IA, lo que puede derivar en sesgos algorítmicos.
+- **Representatividad:** Los conjuntos de datos deben incluir representación adecuada de personas amb distintos tipos de discapacidad.
+- **Datos desagregados:** La falta de datos desagregados sobre discapacidad implica que las personas amb discapacidad están infrarrepresentadas en los sistemas de IA, lo que puede derivar en sesgos algorítmicos.
 - **Auditoría de sesgos:** Realizar auditorías periódicas para detectar y corregir sesgos discriminatorios.
 - **Diversidad en equipos:** Promover la diversidad en los equipos de desarrollo de IA.
 
@@ -535,12 +535,12 @@ Los sistemas de IA deben permitir y facilitar **ajustes razonables**:
 
 | Obligación | Fundamento legal | Requisito concreto |
 |---|---|---|
-| **Accesibilidad** | Art. 9 CDPD; Directiva (UE) 2019/882; Ley 11/2023; RDL 1/2013 | Cumplir EN 301 549 y WCAG 2.1 AA; compatibilidad con tecnologías de asistencia; contenido en lectura fácil |
+| **Accesibilidad** | Art. 9 CDPD; Directiva (UE) 2019/882; Ley 11/2023; RDL 1/2013 | Cumplir EN 301 549 y WCAG 2.1 AA; compatibilidad amb tecnologías de asistencia; contenido en lectura fácil |
 | **No discriminación** | Art. 5 CDPD; Art. 21 Carta UE; Directiva 2000/78/CE; Ley 15/2022; AI Act | Prohibición de sesgos algorítmicos por discapacidad; igualdad en empleo, educación, sanidad y servicios |
 | **Ajustes razonables** | Art. 5 CDPD; Art. 5 Directiva 2000/78/CE | Facilitar adaptaciones de interfaz, formatos alternativos, flexibilidad de interacción |
-| **Transparencia** | Art. 22 RGPD; AI Act; Anteproyecto Ley IA | Informar cuando se interactúa con IA; explicar decisiones automatizadas; permitir revisión humana |
+| **Transparencia** | Art. 22 RGPD; AI Act; Anteproyecto Ley IA | Informar cuando se interactúa amb IA; explicar decisiones automatizadas; permitir revisión humana |
 | **Protección de datos** | RGPD; LOPDGDD | Tratamiento especial de datos de discapacidad; minimización; EIPD; seguridad |
-| **Participación** | Art. 4.3 CDPD; Estrategia Europea 2021-2030 | Consulta a organizaciones representativas; pruebas con usuarios con discapacidad; diseño participativo |
+| **Participación** | Art. 4.3 CDPD; Estrategia Europea 2021-2030 | Consulta a organizaciones representativas; pruebas amb usuarios amb discapacidad; diseño participativo |
 | **Supervisión humana** | AI Act; Convención Consejo Europa IA | Intervención humana significativa en decisiones de alto riesgo; derecho a impugnar |
 | **Diseño universal** | Art. 9 CDPD; Estrategia Europea 2021-2030 | Accesibilidad desde la concepción; no requerir adaptaciones adicionales |
 
@@ -550,11 +550,11 @@ Los sistemas de IA deben permitir y facilitar **ajustes razonables**:
 
 | Término | Definición |
 |---|---|
-| **CDPD** | Convención sobre los Derechos de las Personas con Discapacidad de la ONU. |
+| **CDPD** | Convención sobre los Derechos de las Personas amb Discapacidad de la ONU. |
 | **EAA** | European Accessibility Act (Directiva (UE) 2019/882). |
 | **AI Act** | Reglamento (UE) 2024/1689 por el que se establecen normas armonizadas en materia de inteligencia artificial. |
 | **RGPD** | Reglamento General de Protección de Datos (UE) 2016/679. |
-| **LGD** | Ley General de derechos de las personas con discapacidad y de su inclusión social (RDL 1/2013). |
+| **LGD** | Ley General de derechos de las personas amb discapacidad y de su inclusión social (RDL 1/2013). |
 | **LOPDGDD** | Ley Orgánica de Protección de Datos Personales y Garantía de los Derechos Digitales. |
 | **WCAG** | Web Content Accessibility Guidelines (Pautas de Accesibilidad para el Contenido Web). |
 | **EN 301 549** | Norma europea armonizada que define requisitos de accesibilidad para productos y servicios ICT. |
@@ -563,20 +563,20 @@ Los sistemas de IA deben permitir y facilitar **ajustes razonables**:
 | **EIPD** | Evaluación de Impacto en la Protección de Datos. |
 | **CEE** | Centro Especial de Empleo. |
 | **IPREM** | Indicador Público de Renta de Efectos Múltiples. |
-| **CERMI** | Comité Español de Representantes de Personas con Discapacidad. |
+| **CERMI** | Comité Español de Representantes de Personas amb Discapacidad. |
 | **POUR** | Perceptible, Operable, Comprensible y Robusto (principios de accesibilidad). |
 
 ---
 
 ## 9. Referencias Normativas
 
-### Internacionales
-- Convención de las Naciones Unidas sobre los Derechos de las Personas con Discapacidad (2006).
-- Protocolo Facultativo de la Convención sobre los Derechos de las Personas con Discapacidad.
+### Internacionals
+- Convención de las Naciones Unidas sobre los Derechos de las Personas amb Discapacidad (2006).
+- Protocolo Facultativo de la Convención sobre los Derechos de las Personas amb Discapacidad.
 
-### Europeas
+### Europees
 - Carta de los Derechos Fundamentales de la Unión Europea (2000/2012).
-- Estrategia Europea sobre los Derechos de las Personas con Discapacidad 2021-2030 (COM/2021/101 final).
+- Estrategia Europea sobre los Derechos de las Personas amb Discapacidad 2021-2030 (COM/2021/101 final).
 - Directiva 2000/78/CE del Consejo, de 27 de noviembre de 2000.
 - Directiva (UE) 2019/882 del Parlamento Europeo y del Consejo, de 17 de abril de 2019 (EAA).
 - Directiva (UE) 2016/2102 del Parlamento Europeo y del Consejo, de 26 de octubre de 2016.
@@ -584,24 +584,23 @@ Los sistemas de IA deben permitir y facilitar **ajustes razonables**:
 - Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016 (RGPD).
 - Convención Marco del Consejo de Europa sobre Inteligencia Artificial y Derechos Humanos, Democracia y Estado de Derecho (2024).
 
-### Españolas
+### Españoles
 - Constitución Española de 1978.
-- Ley 26/2011, de 1 de agosto, de adaptación normativa a la Convención Internacional sobre los Derechos de las Personas con Discapacidad.
-- Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social.
+- Ley 26/2011, de 1 de agosto, de adaptación normativa a la Convención Internacional sobre los Derechos de las Personas amb Discapacidad.
+- Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas amb discapacidad y de su inclusión social.
 - Ley 15/2022, de 12 de julio, integral para la igualdad de trato y la no discriminación.
 - Ley 11/2023, de 8 de mayo, de transposición de directivas de la Unión Europea en materia de accesibilidad universal.
 - Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y Garantía de los Derechos Digitales.
-- Carta Española de Derechos Digitales (2021).
+- Carta Española de Derechos Digitals (2021).
 - Estrategia Española sobre Discapacidad 2022-2030 (aprobada por el Consejo de Ministros el 3 de mayo de 2022).
 - Anteproyecto de Ley para el Buen Uso y la Gobernanza de la Inteligencia Artificial en España (marzo 2025).
 - Ley 2/2025, de 2 de abril, para el desarrollo e impulso de la inteligencia artificial en Galicia.
 - Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público.
 
-### Técnicas
+### Tècniques
 - Norma UNE-EN 301 549 V3.2.1 (2021) — Requisitos de accesibilidad para productos y servicios TIC.
 - WCAG 2.1 (Web Content Accessibility Guidelines 2.1) — Niveles A y AA.
 
 ---
 
-> **Nota metodológica:** Este documento ha sido elaborado con rigor jurídico a partir de fuentes oficiales (BOE, DOUE, ONU, FRA, EUR-Lex) y académicas. Se recomienda verificar la vigencia de las normas citadas ante posibles modificaciones posteriores a la fecha de elaboración. Para la documentación de un agente-IA, se aconseja incorporar este marco normativo en la sección de cumplimiento legal y en las políticas de gobernanza del sistema.
-
+> **Nota metodológica:** Este documento ha sido elaborado amb rigor jurídico a partir de fuentes oficiales (BOE, DOUE, ONU, FRA, EUR-Lex) y académicas. Se recomienda verificar la vigencia de las normas citadas ante posibles modificaciones posteriores a la fecha de elaboración. Para la documentación de un agente-IA, se aconseja incorporar este marco normativo en la sección de cumplimiento legal y en las polítiques de gobernanza del sistema.
