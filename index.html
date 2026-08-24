@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DiscAI — Discapacitat + IA</title>
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -642,32 +641,4 @@
             recognition.interimResults = false;
 
             micBtn.addEventListener('click', () => {
-                recognition.lang = currentLang === 'ca' ? 'ca-ES' : currentLang === 'es' ? 'es-ES' : currentLang === 'en' ? 'en-US' : 'fr-FR';
-                recognition.start();
-                micBtn.classList.add('recording');
-                micBtn.textContent = "🎙️ Escoltant...";
-            });
-
-            recognition.onresult = (event) => {
-                const speechToText = event.results[0][0].transcript;
-                userInput.value = speechToText;
-                micBtn.classList.remove('recording');
-                micBtn.textContent = translations[currentLang].mic;
-                sendBtn.click();
-            };
-
-            recognition.onerror = () => {
-                micBtn.classList.remove('recording');
-                micBtn.textContent = translations[currentLang].mic;
-            };
-
-            recognition.onend = () => {
-                micBtn.classList.remove('recording');
-                micBtn.textContent = translations[currentLang].mic;
-            };
-        } else {
-            micBtn.style.display = 'none';
-        }
-    </script>
-</body>
-</html>
+                recognition.lang = currentLang === 'ca' ? 'ca-ES' : currentLang ===
