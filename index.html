@@ -1,492 +1,144 @@
-<!DOCTYPE html>
-<html lang="ca">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiscAI — Discapacitat + IA</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-blue: #1e40af;
-            --primary-blue-hover: #1d4ed8;
-            --accent-color: #3b82f6;
-            --bg-white: #ffffff;
-            --bg-light: #f8fafc;
-            --text-dark: #1e293b;
-            --text-muted: #64748b;
-            --border-color: #e2e8f0;
-            --card-shadow: 0 20px 40px -15px rgba(30, 64, 175, 0.08), 0 10px 25px -10px rgba(0, 0, 0, 0.05);
-            --base-font-size: 1rem;
-        }
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
-        body {
-            background-color: var(--bg-light);
-            color: var(--text-dark);
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            font-size: var(--base-font-size);
-        }
-        header {
-            background-color: var(--bg-white);
-            border-bottom: 1px solid var(--border-color);
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-        }
-        .header-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        .brand-logo {
-            display: flex;
-            flex-direction: column;
-            text-decoration: none;
-        }
-        .brand-title {
-            font-size: 1.4rem;
-            font-weight: 800;
-            color: var(--primary-blue);
-            letter-spacing: -0.02em;
-        }
-        .brand-subtitle {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--text-muted);
-        }
-        .nav-controls {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .accessibility-nav {
-            display: flex;
-            gap: 0.3rem;
-            background-color: #f1f5f9;
-            padding: 5px;
-            border-radius: 50px;
-        }
-        .accessibility-btn {
-            background: transparent;
-            border: none;
-            cursor: pointer;
-            color: var(--text-dark);
-            padding: 0.35rem 0.7rem;
-            font-size: 0.9rem;
-            font-weight: 700;
-            border-radius: 40px;
-            transition: all 0.2s ease;
-        }
-        .accessibility-btn:hover {
-            background-color: rgba(30, 64, 175, 0.1);
-            color: var(--primary-blue);
-        }
-        .lang-nav {
-            display: flex;
-            gap: 0.4rem;
-            background-color: #f1f5f9;
-            padding: 5px;
-            border-radius: 50px;
-            flex-wrap: wrap;
-        }
-        .lang-btn, .tab-btn {
-            background: transparent;
-            border: none;
-            cursor: pointer;
-            color: var(--text-muted);
-            padding: 0.45rem 1rem;
-            font-size: 0.85rem;
-            font-weight: 600;
-            border-radius: 40px;
-            transition: all 0.25s ease;
-            text-decoration: none;
-        }
-        .lang-btn:hover, .tab-btn:hover {
-            color: var(--primary-blue);
-            background-color: rgba(30, 64, 175, 0.06);
-        }
-        .lang-btn.active, .tab-btn.active {
-            background-color: var(--primary-blue);
-            color: #ffffff;
-            box-shadow: 0 4px 12px rgba(30, 64, 175, 0.25);
-        }
-        main {
-            max-width: 900px;
-            width: 100%;
-            margin: 2.5rem auto;
-            padding: 0 1.5rem;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .main-card {
-            background-color: var(--bg-white);
-            border-radius: 24px;
-            padding: 3rem 2.5rem;
-            box-shadow: var(--card-shadow);
-            border: 1px solid var(--border-color);
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 2rem;
-        }
-        .tab-content {
-            display: none;
-            width: 100%;
-            flex-direction: column;
-            align-items: center;
-            gap: 2rem;
-        }
-        .tab-content.active {
-            display: flex;
-        }
-        .profile-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            text-align: center;
-        }
-        .profile-img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid var(--border-color);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-        }
-        .intro-box {
-            width: 100%;
-            max-width: 720px;
-            background-color: var(--bg-light);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 2rem;
-            line-height: 1.7;
-            text-align: center;
-            color: var(--text-dark);
-        }
-        .links-container {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .btn-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background-color: #f1f5f9;
-            color: var(--primary-blue);
-            text-decoration: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 50px;
-            font-weight: 600;
-            border: 1px solid var(--border-color);
-            transition: all 0.2s;
-        }
-        .btn-link:hover {
-            background-color: var(--primary-blue);
-            color: white;
-            border-color: var(--primary-blue);
-        }
-        .chat-container {
-            width: 100%;
-            max-width: 720px;
-            background: #ffffff;
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-        }
-        .chat-messages {
-            padding: 1.5rem;
-            height: 280px;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            background: #fdfdfd;
-        }
-        .message {
-            padding: 0.8rem 1rem;
-            border-radius: 12px;
-            max-width: 80%;
-            line-height: 1.5;
-        }
-        .message.user {
-            background-color: #eff6ff;
-            color: var(--primary-blue);
-            align-self: flex-end;
-            border-bottom-right-radius: 2px;
-        }
-        .message.assistant {
-            background-color: #f1f5f9;
-            color: var(--text-dark);
-            align-self: flex-start;
-            border-bottom-left-radius: 2px;
-        }
-        .chat-input-area {
-            display: flex;
-            border-top: 1px solid var(--border-color);
-            background: #ffffff;
-            padding: 0.75rem;
-            gap: 0.5rem;
-            align-items: center;
-        }
-        .chat-input {
-            flex: 1;
-            padding: 0.75rem 1rem;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            outline: none;
-        }
-        .chat-input:focus {
-            border-color: var(--primary-blue);
-        }
-        .chat-btn {
-            background-color: var(--primary-blue);
-            color: white;
-            border: none;
-            padding: 0.75rem 1.2rem;
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-        .chat-btn:hover {
-            background-color: var(--primary-blue-hover);
-        }
-        .mic-btn {
-            background-color: #e2e8f0;
-            color: var(--text-dark);
-            border: none;
-            padding: 0.75rem 1rem;
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-        .mic-btn.recording {
-            background-color: #dc2626;
-            color: white;
-            animation: pulse 1.5s infinite;
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        .prompts-section {
-            background-color: #fdf4f4;
-            border: 1px solid #fecaca;
-            border-radius: 12px;
-            padding: 1.2rem;
-            text-align: center;
-            color: #991b1b;
-            width: 100%;
-            max-width: 720px;
-        }
-        .prompts-list {
-            width: 100%;
-            max-width: 720px;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            text-align: left;
-        }
-        .prompt-card {
-            background: var(--bg-light);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 1.5rem;
-        }
-        .prompt-card h3 {
-            color: var(--primary-blue);
-            margin-bottom: 0.5rem;
-        }
-        .prompt-card p {
-            color: var(--text-muted);
-            margin-bottom: 1rem;
-        }
-        .prompt-box {
-            background: #ffffff;
-            border: 1px dashed #cbd5e1;
-            padding: 1rem;
-            border-radius: 8px;
-            font-family: monospace;
-        }
-        footer {
-            background-color: var(--bg-white);
-            border-top: 1px solid var(--border-color);
-            text-align: center;
-            padding: 2rem 1rem;
-            color: var(--text-muted);
-            margin-top: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 0.4rem;
-        }
-        @media (max-width: 640px) {
-            .header-container { justify-content: center; }
-            .main-card { padding: 2rem 1.25rem; }
-            .chat-input-area { flex-direction: column; align-items: stretch; }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <a href="#" class="brand-logo">
-                <span class="brand-title">DiscAI</span>
-                <span class="brand-subtitle" id="txtSub">Discapacitat + IA</span>
-            </a>
-            <div class="nav-controls">
-                <div class="accessibility-nav" title="Accessibilitat: Grandària del text">
-                    <button class="accessibility-btn" onclick="changeFontSize(-1)" title="Reduir lletra">A-</button>
-                    <button class="accessibility-btn" onclick="resetFontSize()" title="Grandària normal">A</button>
-                    <button class="accessibility-btn" onclick="changeFontSize(1)" title="Augmentar lletra">A+</button>
-                </div>
-                <nav class="lang-nav">
-                    <button class="tab-btn active" id="tabHomeBtn" onclick="switchTab('home')">Inici</button>
-                    <button class="tab-btn" id="tabPromptsBtn" onclick="switchTab('prompts')">Prompts-mestres</button>
-                </nav>
-                <nav class="lang-nav">
-                    <button class="lang-btn active" onclick="setLanguage('ca')">Valencià / Català</button>
-                    <button class="lang-btn" onclick="setLanguage('es')">Castellano</button>
-                    <button class="lang-btn" onclick="setLanguage('en')">English</button>
-                    <button class="lang-btn" onclick="setLanguage('fr')">Français</button>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="main-card">
-            <div id="sectionHome" class="tab-content active">
-                <div class="profile-container">
-                    <img src="imatge.jfif" alt="Laura Soler Azorín" class="profile-img">
-                    <div class="intro-box" id="txtIntro">
-                        Benvinguda/benvingut a la pàgina DiscAI, un web que fa servir un agent-IA per a la integració de persones amb discapacitat, posat en marxa per Laura Soler, diputada en les Corts Valencianes.
-                    </div>
-                </div>
-                <div class="links-container">
-                    <a href="https://www.cortsvalencianes.es/ca-va/composicion/diputados/x/soler_azorin_laura/938cbeb9d9a52027ac059bc7435788ec" target="_blank" class="btn-link" id="linkParliament">
-                        🏛️ La meua activitat parlamentària
-                    </a>
-                    <a href="https://open.spotify.com/show/033WfE2neP9OwU5MJw05Cu" target="_blank" class="btn-link" id="linkPodcast">
-                        🎧 El meu podcast: Independencia sobre ruedas
-                    </a>
-                </div>
-                <div class="chat-container">
-                    <div class="chat-messages" id="chatMessages">
-                        <div class="message assistant" id="txtWelcomeMsg">Hola! Com puc ajudar-te en aquest projecte avui? Pots escriure o usar el botó de veu.</div>
-                    </div>
-                    <div class="chat-input-area">
-                        <input type="text" id="userInput" class="chat-input" placeholder="Escriu ací o prem el micròfon..." />
-                        <button id="micBtn" class="mic-btn" title="Activar entrada per veu">🎤 Veu</button>
-                        <button id="sendBtn" class="chat-btn">Enviar</button>
-                    </div>
-                </div>
-                <div class="prompts-section" id="txtPromptsNotice" style="cursor: pointer;" onclick="switchTab('prompts')">
-                    En l'altra pestanya, podeu accedir a prompts-mestres per a redactar documents ➔
-                </div>
-            </div>
-            <div id="sectionPrompts" class="tab-content">
-                <h2 id="txtPromptsTitle" style="color: var(--primary-blue);">Prompts-mestres per a la redacció de documents</h2>
-                <p id="txtPromptsSub" style="color: var(--text-muted); text-align: center;">Utilitza aquestes instruccions optimitzades per a l'agent-IA amb la finalitat de generar esborranys, mocions o textos adaptats.</p>
-                <div class="prompts-list">
-                    <div class="prompt-card">
-                        <h3 id="p1Title">1. Sol·licitud d'accessibilitat universal</h3>
-                        <p id="p1Desc">Genera un escrit formal per a reclamar millores d'accessibilitat en espais públics o institucionals.</p>
-                        <div class="prompt-box">"Actua com a expert en accessibilitat universal. Redacta un escrit formal dirigit a l'administració sol·licitant la adaptació de..."</div>
-                    </div>
-                    <div class="prompt-card">
-                        <h3 id="p2Title">2. Resum de normativa sobre discapacitat</h3>
-                        <p id="p2Desc">Simplifica i resumeix textos legals complexos a un format de lectura fàcil.</p>
-                        <div class="prompt-box">"Analitza el següent text legal i extrau els punts clau adaptats a lectura fàcil per a persones amb discapacitat intel·lectual..."</div>
-                    </div>
-                </div>
-                <button class="btn-link" onclick="switchTab('home')" id="backHomeBtn">⬅ Tornar a l'inici</button>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2026 Laura Soler Azorín.</p>
-        <p>email: discaiaproject@gmail.com</p>
-    </footer>
-    <script>
-        let currentFontSize = 1;
-        function changeFontSize(direction) {
-            currentFontSize += direction * 0.1;
-            if (currentFontSize < 0.8) currentFontSize = 0.8;
-            if (currentFontSize > 1.6) currentFontSize = 1.6;
-            document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'rem');
-        }
-        function resetFontSize() {
-            currentFontSize = 1;
-            document.documentElement.style.setProperty('--base-font-size', '1rem');
-        }
+export default {
+  async fetch(request, env, ctx) {
+    // ========== CORS ==========
+    if (request.method === "OPTIONS") {
+      return new Response(null, {
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "POST, OPTIONS",
+          "Access-Control-Allow-Headers": "Content-Type",
+        },
+      });
+    }
 
-        const translations = {
-            ca: {
-                subtitle: "Discapacitat + IA",
-                intro: "Benvinguda/benvingut a la pàgina DiscAI, un web que fa servir un agent-IA per a la integració de persones amb discapacitat, posat en marxa per Laura Soler, diputada en les Corts Valencianes.",
-                parliament: "🏛️ La meua activitat parlamentària",
-                podcast: "🎧 El meu podcast: Independencia sobre ruedas",
-                welcomeMsg: "Hola! Com puc ajudar-te en aquest projecte avui? Pots escriure o usar el botó de veu.",
-                placeholder: "Escriu ací o prem el micròfon...",
-                send: "Enviar",
-                mic: "🎤 Veu",
-                promptsNotice: "En l'altra pestanya, podeu accedir a prompts-mestres per a redactar documents ➔",
-                homeTab: "Inici",
-                promptsTab: "Prompts-mestres",
-                promptsTitle: "Prompts-mestres per a la redacció de documents",
-                promptsSub: "Utilitza aquestes instruccions optimitzades per a l'agent-IA amb la finalitat de generar esborranys, mocions o textos adaptats.",
-                backHome: "⬅ Tornar a l'inici",
-                p1Title: "1. Sol·licitud d'accessibilitat universal",
-                p1Desc: "Genera un escrit formal per a reclamar millores d'accessibilitat en espais públics o institucionals.",
-                p2Title: "2. Resum de normativa sobre discapacitat",
-                p2Desc: "Simplifica i resumeix textos legals complexos a un format de lectura fàcil."
-            },
-            es: {
-                subtitle: "Discapacidad + IA",
-                intro: "Bienvenida/bienvenido a la página DiscAI, una web que utiliza un agente-IA para la integración de personas con discapacidad, puesto en marcha por Laura Soler, diputada en las Cortes Valencianas.",
-                parliament: "🏛️ Mi actividad parlamentaria",
-                podcast: "🎧 Mi podcast: Independencia sobre ruedas",
-                welcomeMsg: "¡Hola! ¿Cómo puedo ayudarte en este proyecto hoy? Puedes escribir o usar el botón de voz.",
-                placeholder: "Escribe aquí o pulsa el micrófono...",
-                send: "Enviar",
-                mic: "🎤 Voz",
-                promptsNotice: "En la otra pestaña, podéis acceder a prompts-maestros para redactar documentos ➔",
-                homeTab: "Inicio",
-                promptsTab: "Prompts-maestros",
-                promptsTitle: "Prompts-maestros para la redacción de documentos",
-                promptsSub: "Utiliza estas instrucciones optimizadas para el agente-IA con el fin de generar borradores, mociones o textos adaptados.",
-                backHome: "⬅ Volver al inicio",
-                p1Title: "1. Solicitud de accesibilidad universal",
-                p1Desc: "Genera un escrito formal para reclamar mejoras de accesibilidad en espacios públicos o institucionales.",
-                p2Title: "2. Resumen de normativa sobre discapacidad",
-                p2Desc: "Simplifica y resume textos legales complejos a un formato de lectura fácil."
-            },
-            en: {
-                subtitle: "Disability + AI",
-                intro: "Welcome to the DiscAI page, a website that uses an AI agent for the integration of people with disabilities, launched by Laura Soler, member of the Val
+    if (request.method !== "POST") {
+      return new Response(JSON.stringify({ error: "Mètode no permès. Usa POST." }), {
+        status: 405,
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+      });
+    }
+
+    try {
+      const data = await request.json();
+      const userMessage = (data.message || "").trim();
+      const lang = data.lang || "ca";
+
+      if (!userMessage) {
+        return new Response(JSON.stringify({ error: "El missatge és buit." }), {
+          status: 400,
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+        });
+      }
+
+      const systemPrompt = `Ets DiscAI, l'agent d'intel·ligència artificial del projecte de Laura Soler Azorín (diputada a les Corts Valencianes) per a la integració de persones amb discapacitat.
+
+IDIOMA: Respon sempre en l'idioma que l'usuari haja utilitzat. Els idiomes suportats són: català (ca), castellà (es), anglés (en) i francés (fr).
+
+ÀREES D'EXPERTESA PRINCIPALS:
+
+1. LEGISLACIÓ EUROPEA I ESPANYOLA SOBRE DISCAPACITAT I IA:
+   - Convenció ONU sobre Drets de les Persones amb Discapacitat (CDPD): model social, art. 5 (igualtat), art. 9 (accessibilitat), art. 19 (vida independent), art. 21 (llibertat d'expressió), art. 24 (educació inclusiva), art. 27 (treball).
+   - Carta de Drets Fonamentals UE: art. 21 (no discriminació), art. 26 (integració).
+   - Estratègia Europea sobre els Drets de les Persones amb Discapacitat 2021-2030.
+   - Directiva 2000/78/CE: discriminació directa/indirecta, assetjament, ajustos raonables.
+   - European Accessibility Act (EAA) 2019/882: EN 301 549, WCAG 2.1 AA, principis POUR.
+   - AI Act (UE 2024/1689): prohibició d'explotar vulnerabilitats de persones amb discapacitat, sistemes d'alt risc, accessibilitat des del disseny.
+   - RGPD: dades especials, art. 22 (decisions automatitzades), EIPD.
+   - Constitució Espanyola: art. 9.2, 14, 49.
+   - LGD (RDL 1/2013): reserva del 2% de places, règim sancionador, disseny per a tots.
+   - Llei 15/2022: igualtat de tracte, accessibilitat integral, decisions automatitzades.
+   - Llei 11/2023: transposició EAA, requisits tècnics.
+   - LOPDGDD, Carta Espanyola de Drets Digitals, Estratègia Espanyola sobre Discapacitat 2022-2030.
+   - Anteproyecto de Llei de Bon Ús de la IA (2025).
+
+2. EDUCACIÓ INCLUSIVA I ANTI-BULLYING:
+   - Espanya: LOMLOE (art. 74), LOPIVI, Codi Penal (arts. 173.1, 197). 45.001 alumnes en Ed. Especial (2024-25). Debat inclusió vs llibertat d'elecció.
+   - EUA: IDEA (FAPE, LRE, IEP), Secció 504, ADA. 7,6M estudiants, ~65% en aula ordinària.
+   - Finlàndia: Basic Education Act, Pupil Welfare Act. Model 3 nivells. Programa KiVa (reducció 55% acoso). 100% escolarització ordinària.
+   - Lituània: Enmiendas 2020. ~90% en centres ordinaris (2024).
+   - Mundial: Estàndard BULL-LI:2025/A, protecció SOGIESC (6 països), dades OMS/UNESCO.
+
+3. IMPLICACIONS PER A AGENTS DE IA:
+   - Accessibilitat universal (WCAG 2.1 AA, EN 301 549, lectura fàcil).
+   - No discriminació algorítmica.
+   - Ajustos raonables.
+   - Transparència, explicabilitat i supervisió humana.
+   - Protecció de dades sensibles.
+   - Participació de persones amb discapacitat en el disseny.
+   - Auditoria de biaixos.
+
+INSTRUCCIONS DE COMPORTAMENT:
+- Respon de manera clara, accessible, rigorosa i empàtica.
+- Quan redactes documents formals, usa llenguatge jurídic precís i cites normatives.
+- Quan resumes normativa, ofereix lectura fàcil si és pertinent.
+- Si no saps alguna cosa, digues-ho honestament. No inventis dades.
+- Si demanen "prompts mestres", ofereix plantilles per a escrits d'accessibilitat, mocions o resums legals.`.trim();
+
+      if (!env.GEMINI_API_KEY) {
+        throw new Error("No s'ha configurat la variable d'entorn GEMINI_API_KEY.");
+      }
+
+      const model = "gemini-1.5-flash-latest";
+      const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${env.GEMINI_API_KEY}`;
+
+      const geminiBody = {
+        systemInstruction: {
+          parts: [{ text: systemPrompt }]
+        },
+        contents: [
+          {
+            role: "user",
+            parts: [{ text: userMessage }]
+          }
+        ],
+        generationConfig: {
+          temperature: 0.7,
+          maxOutputTokens: 1500,
+        }
+      };
+
+      const geminiRes = await fetch(geminiUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(geminiBody),
+      });
+
+      if (!geminiRes.ok) {
+        const errText = await geminiRes.text();
+        throw new Error(`Error de l'API Gemini (${geminiRes.status}): ${errText}`);
+      }
+
+      const result = await geminiRes.json();
+      const aiText = result.candidates?.[0]?.content?.parts?.[0]?.text;
+
+      if (!aiText) {
+        throw new Error("La resposta de Gemini no conté cap text.");
+      }
+
+      return new Response(JSON.stringify({ response: aiText }), {
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+      });
+
+    } catch (error) {
+      console.error("Error DiscAI:", error);
+      return new Response(JSON.stringify({ error: error.message }), {
+        status: 500,
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+      });
+    }
+  },
+};
