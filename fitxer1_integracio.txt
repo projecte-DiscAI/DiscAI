@@ -1,1 +1,455 @@
+---
+title: "Legislación contra el Acoso Escolar (Bullying) y Educación Inclusiva de Personas con Discapacidad"
+subtitle: "Análisis Comparativo Internacional, Marcos Normativos y Fuentes Documentales — Informe Académico Integrado"
+version: "1.0.0"
+date: "2026-08-24"
+authors: ["Síntesis de documentos académicos"]
+tags: ["bullying", "ciberacoso", "educación inclusiva", "discapacidad", "legislación comparada", "LOPIVI", "LOMLOE", "IDEA", "KiVa", "SOGIESC", "derechos civiles"]
+lang: "es"
+---
+
+# ÍNDICE GENERAL
+
+1. [Metadatos y Estructura del Documento](#1-metadatos-y-estructura-del-documento)
+2. [Introducción y Objetivos del Estudio](#2-introducción-y-objetivos-del-estudio)
+3. [Marco Normativo Internacional y Estándares Globales](#3-marco-normativo-internacional-y-estándares-globales)
+   - 3.1. Organismos Internacionales (ONU, UNESCO, OMS)
+   - 3.2. Estándar Internacional BULL-LI:2025/A
+   - 3.3. Protección contra la Discriminación SOGIESC (LGBTI)
+4. [Análisis Exhaustivo por Países: Legislación Anti-Bullying](#4-análisis-exhaustivo-por-países-legislación-anti-bullying)
+   - 4.1. España: Marco Normativo Disperso
+   - 4.2. Estados Unidos: Protección Federal, Leyes Estatales y Enfoque de Derechos Civiles
+   - 4.3. Finlandia: Modelo Preventivo Basado en Evidencia (KiVa)
+5. [Análisis Exhaustivo por Países: Educación Inclusiva de Personas con Discapacidad](#5-análisis-exhaustivo-por-países-educación-inclusiva-de-personas-con-discapacidad)
+   - 5.1. España: Marco Normativo, Datos y Debate Actual
+   - 5.2. Estados Unidos: Marco IDEA, Sección 504 y ADA
+   - 5.3. Finlandia: Modelo Inclusivo sin Segregación
+   - 5.4. Lituania: Transformación Legislativa Acelerada
+6. [Panorama Global y Regional Comparado](#6-panorama-global-y-regional-comparado)
+   - 6.1. América Latina
+   - 6.2. Asia
+   - 6.3. Europa y Oceanía
+7. [Síntesis y Tablas Comparativas](#7-síntesis-y-tablas-comparativas)
+   - 7.1. Cuadro Comparativo de Modelos Anti-Bullying
+   - 7.2. Cuadro Comparativo de Sistemas de Inclusión Educativa
+   - 7.3. Cuadro Integrado de los Tres Países Líderes en Inclusión
+8. [Conclusiones Académicas y Lecciones Aprendidas](#8-conclusiones-académicas-y-lecciones-aprendidas)
+9. [Mapeo Completo de Fuentes y Referencias Documentales](#9-mapeo-completo-de-fuentes-y-referencias-documentales)
+
+---
+
+# 1. METADATOS Y ESTRUCTURA DEL DOCUMENTO
+
+Este documento constituye una síntesis integrada de tres fuentes primarias:
+- **Fuente A**: *Informe Completo Legislación Bullying e Inclusión Educativa* (informe académico comparativo internacional).
+- **Fuente B**: *Los 3 Países Líderes en Inclusión Educativa de Personas con Discapacidad* (análisis comparativo: Finlandia, Lituania y Estados Unidos).
+- **Fuente C**: *Legislación Bullying Mundial España USA Finlandia* (análisis comparativo con perspectiva global y detalle normativo).
+
+El objetivo de esta integración es generar un único corpus textual estructurado, sin pérdida de información, optimizado para ingestión por agentes de inteligencia artificial (RAG, fine-tuning o contexto extendido). Se ha respetado la totalidad de los datos, citas legales, estadísticas y mapeos de fuentes originales, eliminando únicamente redundancias textuales puras y unificando la jerarquía de secciones.
+
+---
+
+# 2. INTRODUCCIÓN Y OBJETIVOS DEL ESTUDIO
+
+El derecho a una educación de calidad exige entornos de aprendizaje seguros, equitativos y libres de cualquier forma de violencia o discriminación. El acoso escolar (bullying) y la segregación educativa de los colectivos vulnerables —especialmente las personas con discapacidad— constituyen dos de las mayores amenazas contra la integridad física, psíquica y social de la infancia y la juventud a nivel mundial.
+
+Según cifras de la Organización Mundial de la Salud (OMS), aproximadamente **200.000 jóvenes de entre 14 y 28 años fallecen por suicidio al año** en el mundo como consecuencia directa del acoso escolar. Por otro lado, la inclusión efectiva de personas con discapacidad dista de ser homogénea a escala global: mientras algunos países avanzan decididamente hacia modelos totalmente integrados, persisten estructuras segregadoras y severas lagunas de formación docente en amplias regiones del planeta.
+
+El objetivo central de este documento es ofrecer un estudio legal y normativo comparativo riguroso que analice cómo se articulan las políticas anti-bullying y los marcos de educación inclusiva en diversos sistemas jurídicos representativos (España, Estados Unidos, Finlandia y Lituania), situándolos en el contexto del marco internacional y las estadísticas globales.
+
+---
+
+# 3. MARCO NORMATIVO INTERNACIONAL Y ESTÁNDARES GLOBALES
+
+## 3.1. Organismos Internacionales (ONU, UNESCO, OMS)
+
+### Organización de las Naciones Unidas (ONU)
+- **Convención sobre los Derechos del Niño, Artículo 19**: impone la obligación a los Estados de proteger a los menores contra toda forma de violencia, maltrato o explotación.
+- **Convención Internacional sobre los Derechos de las Personas con Discapacidad (CDPD), Artículo 24**: consagra el derecho a un sistema educativo inclusivo a todos los niveles, instando al fin de los modelos educativos segregados.
+
+### UNESCO
+- A través del **Día Internacional contra la Violencia y el Acoso Escolar (5 de noviembre)**, promueve políticas globales contra la violencia en el aula.
+- Su *Global Education Monitoring Youth Report 2024* pone de relieve que únicamente el **16% de los países** cuenta con legislación específica dirigida a prevenir e intervenir frente al ciberacoso.
+
+### OMS
+- Alerta de las repercusiones graves en salud mental asociadas al acoso continuado y su correlación directa con el incremento de la mortalidad juvenil.
+
+## 3.2. Estándar Internacional BULL-LI:2025/A
+
+Presentada en noviembre de 2025 en Ciudad de México y redactada por especialistas de 13 países, constituye el estándar técnico internacional anti-bullying de referencia. Adopta el modelo estructurado **ADIPS** (Atención, Detección, Intervención, Prevención y Seguimiento) con el objetivo operativo de reducir la incidencia de acoso en los centros educativos hasta en un **60%**.
+
+## 3.3. Protección contra la Discriminación SOGIESC (LGBTI)
+
+A nivel de normativas antidiscriminación, solo **seis países en el mundo** —Andorra, España, Finlandia, Grecia, Holanda y Portugal— poseen una cobertura legislativa integral que protege expresamente contra el acoso escolar basándose en **todas** las categorías SOGIESC (orientación sexual, identidad de género, expresión de género y características sexuales). A escala global, al menos 40 Estados miembros de la ONU incluyen algún grado de protección legal sectorial.
+
+---
+
+# 4. ANÁLISIS EXHAUSTIVO POR PAÍSES: LEGISLACIÓN ANTI-BULLYING
+
+## 4.1. España: Marco Normativo Disperso y Debate sobre una Ley Integral
+
+España no dispone de una ley integral y unitaria contra el acoso escolar, sino que lo aborda desde una arquitectura normativa fragmentada:
+
+### Normativa Educativa y de Protección a la Infancia
+- **Ley Orgánica 8/2021 (LOPIVI)**: Reconoce explícitamente el acoso escolar como una forma de violencia y obliga a los centros educativos a implementar protocolos específicos de actuación.
+- **Ley Orgánica 3/2020 (LOMLOE)**: Establece que todos los centros deben incluir en su proyecto educativo un plan de convivencia.
+- **Real Decreto 732/1995**: Vela por el derecho de los estudiantes a la integridad física y moral.
+
+### Código Penal y Responsabilidad
+- **Artículo 173.1**: Tipifica el delito de trato degradante, aplicable a casos graves de bullying.
+- **Artículo 197**: Protege contra el descubrimiento y revelación de secretos, aplicable al ciberbullying (difusión de imágenes o información privada).
+- **Ley Orgánica 5/2000**: Regula la responsabilidad penal del menor de entre 14 y 18 años.
+
+### Definición Fiscal y Elementos del Bullying
+La **Instrucción 10/2005 de la Fiscalía General del Estado** define el acoso escolar como una conducta de persecución física y/o psicológica con estos elementos esenciales:
+1. Intencionalidad
+2. Reiteración
+3. Desequilibrio de poder
+4. Indefensión de la víctima
+5. Producción en el entorno escolar
+
+### Obligaciones de los Centros Educativos
+Todos los centros deben contar con un protocolo antibullying que se active ante la mínima sospecha. Los centros tienen una posición de **garante** respecto a la seguridad de los alumnos mientras están bajo su custodia y pueden incurrir en responsabilidad civil subsidiaria si no actúan correctamente.
+
+### Vías de Actuación
+1. **Vía administrativa-educativa**: comunicación formal al centro, activación del protocolo, reclamación ante Inspección Educativa o la Consejería de Educación.
+2. **Vía penal**: denuncia ante la Fiscalía de Menores (si el acosador tiene menos de 14 años) o procedimiento de la Ley de Responsabilidad Penal del Menor (14-18 años).
+3. **Vía civil**: reclamación de indemnización por daños y perjuicios a los padres del acosador y/o al centro educativo.
+
+### Situación Actual y Demandas
+En noviembre de 2025, asociaciones de víctimas se concentraron ante el Congreso reclamando una **Ley Integral específica** contra el acoso escolar, ya que consideran que los protocolos actuales son insuficientes. La normativa española se caracteriza por su fragmentación: existe protección, pero no un marco unitario que articule prevención, intervención, sanción y reparación de manera coordinada.
+
+## 4.2. Estados Unidos: Protección Federal, Leyes Estatales y Marco de Derechos Civiles
+
+Estados Unidos carece de una ley federal única contra el bullying. Se articula mediante protecciones federales de derechos civiles y normativas específicas en los 50 estados.
+
+### Protección Federal (Derechos Civiles)
+Las leyes de derechos civiles protegen contra el acoso basado en raza, color, origen nacional, orientación sexual, identidad de género, discapacidad o religión. Las escuelas públicas deben reportar incidentes a la **Oficina de Derechos Civiles (OCR)**.
+
+La OCR registró más de **42.500 denuncias de acoso**, desglosadas en:
+- Sexo: 40%
+- Raza: 29%
+- Orientación sexual: 19%
+- Discapacidad: 9%
+- Religión: 3%
+
+### Leyes Estatales Destacadas
+- **Nueva Jersey — Anti-Bullying Bill of Rights (2011)**: Exige coordinadores anti-bullying en cada distrito, informes periódicos y permite sancionar conducta fuera del entorno escolar si afecta al bienestar del estudiante en la escuela.
+- **Massachusetts (2010)**: Capacitación obligatoria para empleados, informes anuales a la legislatura e instrucción sobre prevención del acoso adaptada a la edad de los estudiantes.
+- **California — AB 86 (2009)**: Otorga a las escuelas autoridad para suspender o expulsar a estudiantes que participan en ciberacoso. El Código Penal tipifica como delito la "personificación electrónica" para intimidar.
+
+### Características del Modelo Estadounidense
+- **Alta litigiosidad**: las familias pueden demandar a los distritos por "indiferencia deliberada" (*deliberate indifference*).
+- **Enfoque en derechos civiles**: el bullying se aborda principalmente como violación de derechos protegidos.
+- **Variabilidad estatal**: la protección depende del estado de residencia, generando desigualdades.
+- **Énfasis en el ciberacoso**: muchos estados han actualizado sus leyes para incluir el acoso digital.
+
+## 4.3. Finlandia: Modelo Preventivo Basado en Evidencia (KiVa)
+
+Finlandia es considerada referencia mundial en prevención del acoso escolar. Su modelo se distingue por integrar obligaciones legales con programas basados en evidencia científica y una cultura de bienestar escolar.
+
+### Marco Legal
+- **Ley de Educación Básica (Basic Education Act, 628/1998), Artículo 29**: Establece el derecho del alumno a un entorno de aprendizaje seguro. La obligación legal del proveedor educativo es elaborar un plan para proteger a los alumnos contra la violencia, el acoso y el hostigamiento, ejecutarlo y supervisar su cumplimiento. Este plan debe integrarse en el diseño curricular del centro.
+- **Ley de Bienestar del Alumno (Pupil and Student Welfare Act, 1287/2013)**: Establece el bienestar del alumno como derecho gratuito necesario para su participación en la educación. Incluye la promoción del buen aprendizaje, la salud psicológica y física, y el bienestar social. Se organiza en equipos multiprofesionales que incluyen director, profesores, psicólogo escolar, trabajador social, enfermera y médico escolar.
+
+### Plan de Bienestar del Alumno (Student Welfare Plan)
+Es el instrumento operativo obligatorio en todas las escuelas. Según el Centro Finlandés de Evaluación Educativa (FINEEC), el **95% de los planes de bienestar** incluyen las medidas estatutarias para proteger contra la violencia, el acoso y el hostigamiento. El plan debe contemplar evaluación de necesidades, servicios de apoyo, medidas de promoción del bienestar, cooperación con estudiantes y familias, y procedimientos para prevenir el acoso, la violencia y las crisis.
+
+### Programa KiVa (Kiusaamista Vastaan)
+Desarrollado por la Universidad de Turku con financiación del Ministerio de Educación y Cultura desde 2006, es el programa anti-bullying basado en evidencia más importante del mundo. Adopta un enfoque de escuela completa (*whole school approach*), centrándose no solo en agresores y víctimas, sino también en los **espectadores (bystanders)**, que juegan un papel crítico en la dinámica de grupo.
+
+**Resultados del programa KiVa:**
+- Reducción del **55%** de casos de acoso en escuelas primarias (estudio piloto 2013-2014).
+- Reducción del **40%** en escuelas secundarias.
+- Tras probarlo en 234 colegios con 30.000 estudiantes, se acabó con el acoso en el **79,4%** de los casos y se redujo en el 18,5% restante.
+- Según PISA 2022, entre el **15% y el 18%** de los estudiantes finlandeses reportan haber sufrido acoso, por debajo de la media de la OCDE.
+
+**Evaluación FINEEC 2023 sobre KiVa:**
+- 75% de los participantes consideró que KiVa ofrece herramientas para intervenir en casos de acoso.
+- 55% consideró que el programa tiene un papel significativo en la prevención.
+- 72% sintió que el programa previene casos de acoso en su escuela.
+- 85% consideró que la división de responsabilidades es clara.
+
+### Plan de Acción contra el Bullying (2021-2023)
+El Ministerio de Educación y Cultura implementó este plan, dentro del cual el FINEEC evaluó siete métodos anti-bullying. Las recomendaciones de desarrollo incluyeron: clarificar roles, combinar diversos métodos, asignar recursos suficientes, mejorar la visibilidad de los métodos de intervención, facilitar mayor participación estudiantil y evaluar continuamente los métodos utilizados.
+
+### Protección LGBTI en las Escuelas
+Finlandia es uno de los 6 países del mundo (junto con Andorra, Grecia, Holanda, Portugal y España) que cuenta con legislación que protege contra el acoso escolar basado en **todas** las categorías SOGIESC.
+
+### Filosofía del Sistema Finlandés
+- **Educación inclusiva**: la educación básica es la misma para todos, sin segregación por niveles.
+- **Apoyo temprano**: el enfoque está en el apoyo lo más temprano posible para prevenir la aparición y el crecimiento de problemas.
+- **Participación estudiantil**: todas las escuelas deben tener una asociación de alumnos que debe ser escuchada antes de tomar decisiones que les afecten.
+- **Cultura escolar de bienestar**: promover el bienestar es responsabilidad compartida de todos los adultos de la comunidad escolar.
+- **Sistema de tutorías**: cada escuela cuenta con un equipo de tutores que supervisa el proceso educativo de cada niño, registra signos de abuso y los comparte con todo el personal para activar acciones de prevención.
+
+---
+
+# 5. ANÁLISIS EXHAUSTIVO POR PAÍSES: EDUCACIÓN INCLUSIVA DE PERSONAS CON DISCAPACIDAD
+
+## 5.1. España: Marco Normativo, Datos y Debate Actual
+
+### Marco Normativo Principal
+- **Ley Orgánica 3/2020 de Modificación de la Ley Orgánica de Educación (LOMLOE)**: es la norma educativa vigente que regula la inclusión. En su **Artículo 74** establece que el Gobierno desarrollará un plan para que, en un plazo de diez años, los centros ordinarios cuenten con los recursos necesarios para atender al alumnado con discapacidad.
+- **Disposición Adicional Cuarta de la LOMLOE**: estableció un plazo de 10 años para que los centros de educación especial se conviertan en centros de recursos que apoyen a los centros ordinarios, limitándose a situaciones muy excepcionales que precisen atención muy especializada.
+- **Convención Internacional sobre los Derechos de las Personas con Discapacidad de la ONU (Art. 24)**: obliga a los Estados a asegurar un sistema educativo inclusivo a todos los niveles.
+
+### Principios Clave de la LOMLOE
+- La escolarización del alumnado con necesidades específicas de apoyo educativo debe orientarse prioritariamente hacia centros ordinarios, con los recursos y apoyos necesarios para garantizar la inclusión.
+- La ley permite a las familias solicitar un centro concreto, pero la administración tiene la última palabra para asignar plaza, de acuerdo con la planificación educativa y la disponibilidad de apoyos.
+
+### Situación Real y Datos (Curso 2024-2025)
+- Se registraron **45.001 alumnos** en Educación Especial (1.927 más que el curso anterior).
+- Aproximadamente **41.000 alumnos** con discapacidad están escolarizados en alguna modalidad de enseñanza segregadora.
+- El **Comité de la ONU** sobre los derechos de las personas con discapacidad ha señalado que España vulnera gravemente el derecho a la educación inclusiva por no eliminar las barreras de acceso a la escuela ordinaria.
+
+### Debate Político Actual
+Existe una fuerte controversia sobre el modelo:
+- **Gobierno y partidos progresistas**: defienden la inclusión en centros ordinarios como único modelo adecuado, argumentando que la educación especial segrega.
+- **PP y otros partidos**: defienden la libertad de elección de las familias para decidir entre escolarización ordinaria o especial, argumentando que la "mera incorporación" a centros ordinarios sin apoyos suficientes no es inclusión real.
+- En **septiembre de 2025**, el Congreso rechazó una proposición de ley del PP que buscaba modificar la LOMLOE para dar más peso a la elección de las familias.
+
+## 5.2. Estados Unidos: Marco IDEA, Sección 504 y ADA
+
+Estados Unidos cuenta con la ley de educación especial más comprehensiva y judicialmente exigible del mundo.
+
+### Marco Legal Principal
+- **Individuals with Disabilities Education Act (IDEA)**: Garantiza que todos los niños elegibles con discapacidad reciban una Educación Pública Gratuita y Apropiada (FAPE) adaptada a sus necesidades individuales. La ley es de cumplimiento obligatorio y los incumplimientos son exigibles ante los tribunales.
+- **Sección 504 de la Rehabilitation Act (1973)**: Prohíbe la discriminación por discapacidad en programas que reciben fondos federales, ampliando la protección más allá de IDEA.
+- **Americans with Disabilities Act (ADA, 1990)**: Prohíbe la discriminación por discapacidad en todos los ámbitos de la vida pública, incluida la educación.
+
+### Pilares del Sistema IDEA
+- **FAPE** (*Free Appropriate Public Education*): Educación pública gratuita y apropiada para todo alumno con discapacidad.
+- **LRE** (*Least Restrictive Environment*): Educación con compañeros sin discapacidad en la medida de lo posible. La ley parte de la premisa de que la educación ordinaria es el entorno por defecto.
+- **IEP** (*Individualized Education Program*): Programa Educativo Individualizado — documento legalmente vinculante que define metas, servicios, adaptaciones y evaluaciones para cada alumno. Debe revisarse anualmente como mínimo.
+- **Salvaguardas procesales**: derechos a evaluación gratuita, audiencias de debido proceso, mediación, representación legal y apelaciones administrativas. Los padres pueden demandar al distrito escolar si consideran que el IEP no es apropiado.
+- **Servicios relacionados**: terapia del habla, terapia ocupacional, servicios de orientación, transporte especializado, etc.
+- **Transición a la vida adulta**: desde los 16 años (en California desde el inicio de secundaria), el IEP debe incluir objetivos postsecundarios (educación superior, empleo, vida independiente).
+
+### Aplicabilidad Práctica
+- Más de **7,6 millones** de estudiantes reciben servicios bajo la Parte B de IDEA (2022-2023).
+- El IEP es un **contrato legal**: el distrito escolar está obligado a proporcionar todos los servicios descritos. El incumplimiento puede llevar a sanciones, reembolsos de matrícula privada y daños.
+- Las familias tienen derecho a una **audiencia de debido proceso** imparcial ante un juez administrativo, con representación legal.
+- La ley exige que los maestros regulares participen en el desarrollo del IEP y en la implementación de adaptaciones en el aula.
+
+### Resultados
+- Aproximadamente el **65%** de los estudiantes con discapacidad pasan más del 80% del día en aulas ordinarias.
+- El sistema de salvaguardas procesales ha generado una jurisprudencia extensa que refuerza los derechos de los alumnos.
+- La exigibilidad judicial convierte los derechos en realidades prácticas, no solo declaraciones teóricas.
+
+### Fortalezas y Debilidades
+- **Fortalezas**: marco legal más comprehensivo del mundo, salvaguardas procesales exigibles ante tribunales, IEP legalmente vinculante, amplia jurisprudencia protectora, servicios relacionados garantizados, transición a vida adulta planificada.
+- **Debilidades**: alta litigiosidad que genera desigualdades (familias con recursos legales obtienen mejores resultados), variabilidad entre estados y distritos, persistencia de escuelas especiales (especialmente para discapacidades severas), burocracia extensa del proceso IEP.
+
+## 5.3. Finlandia: Modelo Inclusivo sin Segregación
+
+Finlandia representa el modelo nórdico de bienestar escolar integrado, donde la inclusión es un principio estructural y no una medida excepcional.
+
+### Marco Legal
+- **Ley de Educación Básica (Basic Education Act, 628/1998)**: El Artículo 29 establece el derecho del alumno a un entorno de aprendizaje seguro y obliga al proveedor educativo a elaborar, ejecutar y supervisar un plan para proteger a los alumnos contra la violencia, el acoso y el hostigamiento.
+- **Ley de Bienestar del Alumno (Pupil and Student Welfare Act, 1287/2013)**: Establece el bienestar del alumno como derecho gratuito necesario para su participación en la educación. Se organiza en equipos multiprofesionales obligatorios compuestos por director, profesores, psicólogo escolar, trabajador social escolar, enfermera y médico escolar.
+
+### Modelo de Apoyo en Tres Niveles
+El sistema finlandés no segrega por niveles de discapacidad. En su lugar, ofrece apoyo progresivo dentro del centro ordinario:
+1. **Apoyo general**: medidas ordinarias de diferenciación para todo el alumnado.
+2. **Apoyo intensificado**: intervenciones adicionales para alumnos con dificultades persistentes.
+3. **Apoyo especial**: recursos específicos para alumnos con necesidades educativas especiales, siempre dentro del centro ordinario.
+
+No existe la escolarización en centros segregados como opción ordinaria. La educación básica es la misma para todos, sin *streaming* ni segregación por niveles.
+
+### Aplicabilidad Práctica
+- **Plan de Bienestar del Alumno (Student Welfare Plan)**: instrumento operativo obligatorio en todas las escuelas. El 95% de los planes incluyen las medidas estatutarias para proteger contra violencia, acoso y hostigamiento.
+- **Sistema de tutorías**: cada escuela cuenta con un equipo de tutores que supervisa el proceso educativo de cada niño, registra signos de dificultad y los comparte con todo el personal para activar acciones de apoyo temprano.
+- **Participación estudiantil**: todas las escuelas deben tener una asociación de alumnos que debe ser escuchada antes de tomar decisiones que les afecten.
+- **Cultura de bienestar compartida**: promover el bienestar es responsabilidad de todos los adultos de la comunidad escolar, no solo del profesorado.
+
+### Resultados
+- Según PISA 2022, entre el **15% y el 18%** de los estudiantes finlandeses reportan haber sufrido acoso, por debajo de la media de la OCDE.
+- El modelo finlandés de inclusión educativa es reconocido internacionalmente como referente en bienestar escolar integrado.
+- La filosofía de apoyo temprano evita que las dificultades se agraven, reduciendo la necesidad de intervenciones posteriores más intensas.
+
+### Fortalezas y Debilidades
+- **Fortalezas**: modelo no segregador, equipos multiprofesionales obligatorios, cultura de bienestar, apoyo temprano, participación estudiantil.
+- **Debilidades**: requiere recursos y formación continuos; la descentralización municipal puede generar desigualdades entre regiones.
+
+## 5.4. Lituania: Transformación Legislativa Acelerada
+
+Lituania ha experimentado una de las transformaciones legislativas más rápidas y exitosas de Europa en materia de inclusión educativa.
+
+### Marco Legal
+- **Enmiendas 2020 a la Ley de Educación (vigentes desde septiembre 2024)**: Definen la inclusión como principio estructural: "La inclusión significa que el sistema educativo permite a toda persona desarrollar su educación, capacidades y habilidades con el apoyo necesario". Esta definición supera el modelo médico para adoptar un enfoque de derechos humanos.
+- **Plan de Acción para la Inclusión Educativa 2021-2024**: Estableció la meta de que el 90% de los alumnos con discapacidad estuviera escolarizado en centros ordinarios para 2030. Para 2024, esta cifra ya se había alcanzado, superando las expectativas iniciales.
+
+### Aplicabilidad Práctica
+- **Reestructuración de centros especiales**: los centros de educación especial se han transformado en centros de recursos que apoyan a las escuelas ordinarias, en lugar de mantener la segregación.
+- **Apoyo especializado itinerante**: especialistas (logopedas, psicopedagogos, terapeutas) visitan las escuelas ordinarias para atender al alumnado con necesidades específicas sin retirarlos del aula.
+- **Formación docente obligatoria**: los profesores reciben formación continua en metodologías inclusivas y adaptaciones curriculares.
+- **Evaluación y seguimiento**: el sistema establece mecanismos de evaluación periódica del progreso de cada alumno, con ajustes progresivos del plan de apoyo.
+
+### Resultados
+- Aproximadamente el **90%** de todos los alumnos con necesidades educativas especiales, incluidos los con discapacidad, están matriculados en educación ordinaria (dato 2024).
+- Reducción drástica de la matriculación en centros segregados en solo cuatro años.
+- Reconocimiento internacional por la velocidad y eficacia de la transformación.
+
+### Fortalezas y Debilidades
+- **Fortalezas**: transformación legislativa reciente y ambiciosa, metas cuantificables con plazos definidos, reestructuración de centros especiales en centros de recursos, apoyo itinerante, alta tasa de inclusión alcanzada.
+- **Debilidades**: la velocidad de la transformación puede generar resistencia en algunos sectores; la formación docente debe mantenerse y ampliarse para sostener los resultados a largo plazo.
+
+---
+
+# 6. PANORAMA GLOBAL Y REGIONAL COMPARADO
+
+## 6.1. América Latina
+
+Países con leyes específicas contra el acoso escolar:
+
+| País | Normativa | Año | Enfoque |
+|------|-----------|-----|---------|
+| **Argentina** | Ley 26.892 | 2013 | Sanciones disciplinarias + investigación |
+| **Chile** | Ley 20.536 | 2011 | Comités de Buena Convivencia; incluye ciberacoso |
+| **Colombia** | Ley 1.620 | 2013 | Prevención, protección, detección temprana |
+| **Costa Rica** | Ley 9.404 | 2016 | Primero en usar el término 'bullying' en ley |
+| **Honduras** | Decreto 96 | 2014 | Sanciones administrativas y disciplinarias |
+| **México** | PNCE | 2018 | Programas de prevención y mediación |
+| **Paraguay** | Ley 4.633 | 2012 | Prevención, intervención, capacitación docente |
+| **Perú** | Ley 29.719 | 2011 | Diagnóstico, prevención, sanción, erradicación |
+| **Uruguay** | Repartido 525 | 2016 | Plan de buena convivencia en cada centro |
+
+México encabeza las estadísticas mundiales de intimidación escolar, con más de **28 millones** de menores en riesgo y un aumento de más del **200%** en reportes en cinco años.
+
+## 6.2. Asia
+
+- **Malasia**: Ley Anti-Bullying 2026 (entrada en vigor junio 2026) crea un Tribunal Anti-Bullying con poder para otorgar compensaciones de hasta 250.000 ringgit. La enmienda al Código Penal (julio 2025) criminaliza el acoso, hostigamiento y *doxing*, con penas de hasta 10 años si la víctima se suicida.
+- **Filipinas**: Ley Republic Act 10627 (2013) exige que todas las escuelas primarias y secundarias adopten política anti-bullying. Un estudio de Plan International (2008) reveló que el 50% de los escolares había sufrido acoso.
+- **Corea del Sur**: Ley de Prevención y Contramedidas contra la Violencia Escolar (2004), impulsada por una movilización cívica de 470.000 ciudadanos liderada por la Blue Tree Foundation.
+
+## 6.3. Europa y Oceanía
+
+- **Reino Unido**: *Education and Inspections Act 2006* (Sección 89) obliga a los directores de escuelas públicas a establecer políticas de conducta que prevengan todas las formas de bullying entre alumnos.
+- **Australia (Victoria)**: *Brodie's Law* (2011) tipifica el bullying grave como delito.
+- **Canadá**: Leyes en Ontario y Alberta (2012) implementaron marcos anti-bullying.
+- **Protección LGBTI**: Solo 6 países del mundo (Andorra, Finlandia, Grecia, Holanda, Portugal y España) tienen legislación que protege contra el bullying basado en todas las categorías SOGIESC. Al menos 40 Estados miembros de la ONU tienen alguna protección legal sectorial.
+
+---
+
+# 7. SÍNTESIS Y TABLAS COMPARATIVAS
+
+## 7.1. Cuadro Comparativo de Modelos Anti-Bullying
+
+| Dimensión Analizada | España | Estados Unidos | Finlandia |
+|---------------------|--------|----------------|-----------|
+| **Ley Integral Específica** | No existe. Regulación dispersa (LOPIVI, LOMLOE, C. Penal). | No existe a nivel federal. Cobertura en los 50 estados. | No hay ley única; obligación integrada en leyes marco. |
+| **Enfoque Dominante** | Punitivo-preventivo disperso. | Tutela de Derechos Civiles y litigiosidad judicial. | Preventivo institucional estructurado. |
+| **Programa de Intervención** | Protocolos internos de centro. | Heterogéneo por estado. | Programa KiVa estandarizado nacionalmente. |
+| **Protección LGBTI / SOGIESC** | Completa (1 de 6 países). | Basada en marco general de Derechos Civiles. | Completa (1 de 6 países). |
+| **Incidencia Acoso (PISA)** | Por encima del promedio OCDE. | Variable según Estado. | 15% - 18% (inferior a la media OCDE). |
+| **Base Legal Principal** | LOPIVI (2021) + LOMLOE + Código Penal | Derechos Civiles federales + 50 leyes estatales | Basic Education Act (Art. 29) + Pupil Welfare Act |
+| **Equipo de Apoyo** | Orientador + tutor (variable) | Coordinador anti-bullying (en algunos estados) | Equipo multiprofesional obligatorio |
+| **Fortaleza** | Protección legal diversa | Litigiosidad como palanca de cambio | Eficacia demostrada del programa KiVa |
+| **Debilidad** | Fragmentación normativa; falta de ley integral | Desigualdad entre estados | Requiere recursos y formación continuos |
+
+## 7.2. Cuadro Comparativo de Sistemas de Inclusión Educativa
+
+| Aspecto | Finlandia | Lituania | Estados Unidos |
+|---------|-----------|----------|----------------|
+| **Ley Principal de Referencia** | Basic Education Act + Pupil Welfare Act | Enmiendas a la Ley de Educación (2020) | Individuals with Disabilities Education Act (IDEA) |
+| **Modelo de Escolarización** | 100% en centros ordinarios (sin segregación) | ~90% en centros ordinarios (2024) | LRE (Entorno Menos Restrictivo por defecto) |
+| **Instrumento Personalizado** | Plan de Bienestar del Alumno (obligatorio) | Plan de Apoyo Individual (integrado) | IEP (Individualized Education Program) legalmente vinculante |
+| **Equipo de Apoyo** | Multiprofesional obligatorio (psicólogo, trabajador social, médico, enfermera) | Especialistas itinerantes + equipo escolar | Equipo IEP (padres, maestros, especialistas, administrador) |
+| **Salvaguardas de Exigibilidad** | Vía administrativa + mediación | Evaluación administrativa continua | Audiencias de debido proceso, mediación y vía judicial |
+| **Financiamiento** | Público estatal (municipal) | Público estatal | Federal + estatal + local (por distrito) |
+| **Formación Docente** | Formación inicial y continua en inclusión | Formación obligatoria en metodologías inclusivas | Variable por estado; no federalmente uniforme |
+| **Seguimiento del Alumno** | Tutorías + evaluación continua | Evaluación periódica con ajustes progresivos | Revisión anual obligatoria del IEP + evaluaciones trienales |
+| **Transición a Adulto** | Continuidad en bienestar social | Plan de transición integrado | IEP de transición desde los 16 años (obligatorio) |
+| **Fortaleza Distintiva** | Cultura de bienestar sin segregación | Velocidad de transformación y metas claras | Exigibilidad judicial y salvaguardas procesales |
+| **Debilidad Principal** | Requiere recursos continuos; desigualdad municipal | Sostenibilidad a largo plazo de la transformación | Litigiosidad y desigualdad entre distritos |
+
+## 7.3. Cuadro Integrado de los Tres Países Líderes en Inclusión (Ampliado)
+
+| Aspecto | Finlandia | Lituania | Estados Unidos |
+|---------|-----------|----------|----------------|
+| **Ley principal** | Basic Education Act + Pupil Welfare Act | Enmiendas 2020 a la Ley de Educación | IDEA (1975, reautorizada periódicamente) |
+| **Modelo de escolarización** | 100% en centros ordinarios (sin segregación) | ~90% en centros ordinarios (2024) | LRE: ordinario como default, especial como excepción |
+| **Documento individual** | Plan de bienestar del alumno (obligatorio) | Plan de apoyo individual (integrado) | IEP (legalmente vinculante) |
+| **Equipo de apoyo** | Multiprofesional obligatorio | Especialistas itinerantes + equipo escolar | Equipo IEP |
+| **Salvaguardas procesales** | Vía administrativa + mediación | Vía administrativa + evaluación periódica | Audiencias de debido proceso + mediación + litigio |
+| **Financiamiento** | Público estatal (municipal) | Público estatal | Federal + estatal + local (FUNDEB-like por distrito) |
+| **Formación docente** | Formación inicial y continua en inclusión | Formación obligatoria en metodologías inclusivas | Variable por estado; no federalmente uniforme |
+| **Seguimiento del alumno** | Tutorías + evaluación continua | Evaluación periódica con ajustes progresivos | Revisión anual obligatoria del IEP + evaluaciones trienales |
+| **Transición a adulto** | Continuidad en bienestar social | Plan de transición integrado | IEP de transición desde los 16 años (obligatorio) |
+| **Fortaleza distintiva** | Cultura de bienestar sin segregación | Velocidad de transformación y metas claras | Exigibilidad judicial y salvaguardas procesales |
+| **Debilidad principal** | Requiere recursos continuos; desigualdad municipal | Sostenibilidad a largo plazo de la transformación | Litigiosidad y desigualdad entre distritos |
+
+---
+
+# 8. CONCLUSIONES ACADÉMICAS Y LECCIONES APRENDIDAS
+
+## 8.1. Conclusiones Generales
+
+1. **Insuficiencia del Formalismo Normativo**: La existencia aislada de leyes no garantiza la erradicación del acoso ni la efectividad de la inclusión escolar. Los modelos punitivos muestran menor eficacia que los programas basados en evidencia e intervención directa en el entorno (ej. KiVa).
+
+2. **Diagnóstico Global de la Inclusión**: Según el World Policy Center, aunque el 88% de los países garantiza acceso a la educación primaria para personas con discapacidad, solo el 67% asegura la inclusión en escuelas ordinarias con apoyo individualizado. El 25% mantiene segregación explícita (superando el 40% en Asia y América Latina) y el 40% adolece de falta de formación docente especializada.
+
+3. **Claves de Reforma de Políticas Públicas**: Se requiere un marco legal exigible, seguimiento individualizado binding (IEP/Plan de Bienestar), equipos multiprofesionales permanentes, formación continuada del profesorado y reconversión de centros especiales en centros de recursos.
+
+## 8.2. Lecciones por País
+
+### Finlandia: La inclusión como cultura
+El modelo finlandés demuestra que la inclusión más efectiva no es una medida añadida, sino un principio estructural del sistema educativo. Cuando el bienestar del alumno es responsabilidad de toda la comunidad escolar y el apoyo se organiza en niveles progresivos dentro del centro ordinario, la segregación deja de ser necesaria. La clave está en la inversión en equipos multiprofesionales y en la formación de una cultura de apoyo temprano.
+
+### Lituania: La transformación es posible
+Lituania demuestra que un país puede transformar radicalmente su sistema educativo en pocos años si la voluntad política se traduce en leyes claras, metas cuantificables y plazos definidos. La reconversión de centros especiales en centros de recursos y el apoyo itinerante son estrategias replicables. El desafío es sostener los resultados con formación docente continua y recursos estables.
+
+### Estados Unidos: Los derechos deben ser exigibles
+El modelo estadounidense enseña que las leyes de inclusión solo son efectivas si los derechos son exigibles. El IEP como documento legalmente vinculante y las salvaguardas procesales (audiencias, mediación, litigio) convierten las normas en realidades concretas. Sin embargo, la alta litigiosidad genera desigualdades: las familias con recursos obtienen mejores resultados. El desafío es garantizar el acceso equitativo a las salvaguardas sin depender de la capacidad económica.
+
+## 8.3. Elementos Comunes de Éxito
+
+Los tres países líderes en inclusión (Finlandia, Lituania, Estados Unidos) comparten cinco elementos fundamentales que cualquier sistema educativo puede adoptar:
+
+1. **Marco legal claro y específico**: la inclusión no puede depender de la buena voluntad individual, sino de obligaciones estatutarias.
+2. **Documento individual para cada alumno**: plan de bienestar, plan de apoyo o IEP — el seguimiento personalizado es imprescindible.
+3. **Equipo multiprofesional**: la inclusión requiere más que maestros; necesita psicólogos, trabajadores sociales, terapeutas y médicos.
+4. **Formación docente continua**: los profesores ordinarios deben estar capacitados para atender la diversidad en el aula.
+5. **Mecanismos de seguimiento y evaluación**: sin datos, no hay mejora. Los tres países evalúan periódicamente el progreso de cada alumno y ajustan los planes de apoyo.
+
+## 8.4. Advertencia Global
+
+Según el World Policy Center, aunque el 88% de los países garantiza el acceso a la educación primaria para personas con discapacidad, solo dos tercios (67%) garantiza su integración en escuelas ordinarias con apoyo individualizado. El 25% de los países aún prevé la segregación, y esta cifra supera el 40% en Asia y América Latina. Además, aproximadamente el 40% de los países no proporciona formación a docentes en educación inclusiva. Los tres países analizados representan excepciones positivas en un panorama global donde la inclusión sigue siendo más aspiración que realidad.
+
+---
+
+# 9. MAPEO COMPLETO DE FUENTES Y REFERENCIAS DOCUMENTALES
+
+A continuación se detallan todas las fuentes primarias y secundarias de las cuales se extrajeron los datos, porcentajes, estatutos legales y métricas citadas en el informe:
+
+## Fuentes Primarias de los Documentos de Origen
+
+### Documento de Origen 1: *Informe Completo Legislación Bullying e Inclusión Educativa*
+- **OMS**: Datos de suicidio juvenil por acoso escolar (200.000 fallecimientos/año en el rango 14-28 años).
+- **UNESCO**: Celebración del 5 de noviembre y dato del *Global Education Monitoring Youth Report 2024* (16% de países con ley de ciberacoso).
+- **Estándar BULL-LI:2025/A**: Presentación en México (nov. 2025), 13 países participantes y metodología ADIPS (reducción del 60%).
+- **España (Bullying)**: LOPIVI 8/2021, LOMLOE 3/2020, Real Decreto 732/1995, Código Penal (Arts. 173.1 y 197), Ley de Responsabilidad Penal del Menor 5/2000, Instrucción 10/2005 de la Fiscalía y concentraciones de familias en el Congreso (nov. 2025).
+- **España (Discapacidad)**: Art. 74 y Disposición Adicional Cuarta de LOMLOE; datos de matriculación 2024-2025 (45.001 en Educación Especial, 41.000 en segregación); informes del Comité de la ONU; rechazo de la proposición de ley en septiembre de 2025.
+- **Estados Unidos (Bullying)**: Informe de la Oficina de Derechos Civiles (OCR) con 42.500 denuncias (Sexo 40%, Raza 29%, Orientación Sexual 19%, Discapacidad 9%, Religión 3%); normas de Nueva Jersey, Massachusetts y California (AB 86).
+- **Finlandia (Bullying)**: *Basic Education Act* (Art. 29), *Pupil Welfare Act*; estadísticas de KiVa (79,4% de resolución, 55% reducción en primaria); evaluación FINEEC 2023; PISA 2022 (15%-18% de acoso).
+- **SOGIESC / LGBTI**: Leyes de protección integral en 6 países (Andorra, España, Finlandia, Grecia, Holanda, Portugal).
+- **Panorama Mundial**: Argentina (Ley 26.892), Chile (Ley 20.536), Colombia (Ley 1.620), Costa Rica (Ley 9.404), Honduras (Decreto 96), México (PNCE y >28M en riesgo), Paraguay (Ley 4.633), Perú (Ley 29.719), Uruguay (Rep. 525); Malasia (Ley 2026 y Tribunal), Filipinas (RA 10627), Corea del Sur (Ley 2004); Reino Unido (*Education & Inspections Act 2006*); Australia (*Brodie's Law 2011*).
+
+### Documento de Origen 2: *Los 3 Países Líderes en Inclusión Educativa*
+- **Finlandia (Inclusión)**: Modelo de 3 Niveles (Apoyo General, Intensificado, Especial); equipos multiprofesionales de bienestar; *Student Welfare Plan*.
+- **Lituania (Inclusión)**: Enmiendas 2020 a la Ley de Educación (vigentes sept. 2024); Plan de Acción 2021-2024; meta alcanzada del 90% en aulas ordinarias; transformación de escuelas especiales en centros de recursos con especialistas itinerantes.
+- **Estados Unidos (Inclusión)**: IDEA (FAPE, LRE, IEP); Sección 504 (*Rehabilitation Act 1973*); ADA (1990); 7,6M de alumnos beneficiarios (2022-2023); 65% de escolarización con >80% del tiempo en aula ordinaria; salvaguardas procesales y audiencias de debido proceso.
+- **World Policy Center**: Indicadores internacionales de inclusión (88% acceso a primaria, 67% integración con apoyo, 25% segregación normativa legal, 40% falta de formación docente en inclusión).
+
+### Documento de Origen 3: *Legislación Bullying Mundial España USA Finlandia*
+- **España (Bullying detallado)**: Instrucción 10/2005 de la Fiscalía (elementos del bullying: intencionalidad, reiteración, desequilibrio de poder, indefensión, producción en entorno escolar); vías legales (administrativa, penal, civil); situación actual y demandas de Ley Integral.
+- **Estados Unidos (Bullying detallado)**: Leyes estatales específicas (Nueva Jersey, Massachusetts, California); características del modelo (alta litigiosidad, variabilidad estatal, énfasis en ciberacoso).
+- **Finlandia (Bullying detallado)**: *Plan de Acción contra el Bullying 2021-2023*; evaluación FINEEC 2023 sobre KiVa (75%, 55%, 72%, 85%); protección LGBTI en escuelas; filosofía del sistema (apoyo temprano, participación estudiantil, cultura de bienestar, sistema de tutorías).
+- **Inclusión España (detallado)**: LOMLOE Art. 74 y Disposición Adicional Cuarta; principios clave; datos 2024-2025; debate político actual (PP vs. Gobierno, septiembre 2025).
+- **Panorama Regional**: Tablas de América Latina, Asia, Europa y Oceanía con normativas específicas por país.
+
+---
+
+*Fin del documento. Este texto integra íntegramente el contenido de las tres fuentes primarias, preservando todos los datos legales, estadísticos y referenciales para su uso como corpus de conocimiento por agentes de inteligencia artificial.*
 
