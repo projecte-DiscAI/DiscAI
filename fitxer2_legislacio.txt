@@ -1,1 +1,607 @@
+# Marco Normativo de Integración de Personas con Discapacidad: Legislación Europea y Española
+
+> **Documento de referencia para la documentación de agentes de inteligencia artificial**  
+> **Fecha de elaboración:** 24 de agosto de 2026  
+> **Ámbito:** Unión Europea / Reino de España  
+> **Versión:** 1.0 — Revisión exhaustiva
+
+---
+
+## Índice
+
+1. [Introducción](#1-introducción)
+2. [Marco Internacional](#2-marco-internacional)
+   - 2.1. Convención de la ONU sobre los Derechos de las Personas con Discapacidad (CDPD)
+   - 2.2. Protocolo Facultativo
+   - 2.3. Ratificación e incorporación al ordenamiento español
+3. [Marco Europeo](#3-marco-europeo)
+   - 3.1. Carta de los Derechos Fundamentales de la UE
+   - 3.2. Estrategia Europea sobre los Derechos de las Personas con Discapacidad 2021-2030
+   - 3.3. Directiva 2000/78/CE (igualdad de trato en el empleo)
+   - 3.4. Directiva (UE) 2019/882 — European Accessibility Act (EAA)
+   - 3.5. Reglamento (UE) 2024/1689 — Ley de Inteligencia Artificial (AI Act)
+   - 3.6. Convención Marco del Consejo de Europa sobre IA
+   - 3.7. Reglamento (UE) 2016/679 — RGPD
+   - 3.8. Directiva (UE) 2016/2102 (accesibilidad web del sector público)
+4. [Marco Constitucional y Estatal Español](#4-marco-constitucional-y-estatal-español)
+   - 4.1. Constitución Española de 1978
+   - 4.2. Ley 26/2011 — Adaptación normativa a la CDPD
+   - 4.3. Real Decreto Legislativo 1/2013 — Ley General de Discapacidad (LGD)
+   - 4.4. Ley 15/2022 — Ley Integral para la Igualdad de Trato y la No Discriminación
+   - 4.5. Ley 11/2023 — Transposición de la EAA
+   - 4.6. Ley Orgánica 3/2018 — LOPDGDD
+   - 4.7. Carta Española de Derechos Digitales
+   - 4.8. Estrategia Española sobre Discapacidad 2022-2030
+   - 4.9. Anteproyecto de Ley para el Buen Uso y la Gobernanza de la IA
+5. [Marco Autonómico](#5-marco-autonómico)
+   - 5.1. Galicia — Ley 2/2025 de IA
+   - 5.2. Andalucía — Ley Andalucía Digital (LADI)
+   - 5.3. Extremadura — Estrategia Extremeña de IA
+   - 5.4. País Vasco — Registro de Algoritmos
+   - 5.5. Cataluña — Metodología APDCAT
+   - 5.6. Cantabria — Ley de neuroderechos
+6. [Implicaciones Específicas para Agentes de IA](#6-implicaciones-específicas-para-agentes-de-ia)
+   - 6.1. Accesibilidad universal y diseño para todos
+   - 6.2. No discriminación algorítmica
+   - 6.3. Ajustes razonables
+   - 6.4. Transparencia, explicabilidad y supervisión humana
+   - 6.5. Protección de datos y privacidad
+   - 6.6. Participación de personas con discapacidad
+   - 6.7. Sesgos en datos de entrenamiento
+7. [Síntesis de Obligaciones para Desarrolladores de Agentes-IA](#7-síntesis-de-obligaciones-para-desarrolladores-de-agentes-ia)
+8. [Glosario](#8-glosario)
+9. [Referencias Normativas](#9-referencias-normativas)
+
+---
+
+## 1. Introducción
+
+El presente documento recopila de forma exhaustiva el marco normativo aplicable a la integración de personas con discapacidad en el ámbito de la Unión Europea y del Reino de España, con especial atención a las implicaciones que dicho marco tiene para el desarrollo, despliegue y operación de agentes de inteligencia artificial (IA).
+
+La integración de personas con discapacidad no es solo un objetivo social deseable, sino una obligación jurídica vinculante que emana de múltiples niveles normativos: internacional (Convención de la ONU), europeo (Carta de los Derechos Fundamentales, Estrategia Europea de Discapacidad, AI Act, EAA, RGPD) y estatal (Constitución Española, LGD, Ley 15/2022, Ley 11/2023, LOPDGDD, Carta de Derechos Digitales).
+
+Para los agentes de IA, este marco impone requisitos concretos en materia de accesibilidad, no discriminación algorítmica, transparencia, protección de datos y participación de las personas con discapacidad en el ciclo de vida de los sistemas.
+
+---
+
+## 2. Marco Internacional
+
+### 2.1. Convención de la ONU sobre los Derechos de las Personas con Discapacidad (CDPD)
+
+Aprobada el 13 de diciembre de 2006 por la Asamblea General de las Naciones Unidas, la Convención sobre los Derechos de las Personas con Discapacidad constituye el instrumento internacional de derechos humanos más ratificado de la historia. Su propósito, según el artículo 1, es **"promover, proteger y asegurar el goce pleno y en condiciones de igualdad de todos los derechos humanos y libertades fundamentales por todas las personas con discapacidad y promover el respeto de su dignidad inherente"**.
+
+La CDPD adopta el **modelo social de la discapacidad**, entendiendo que esta es el resultado de la interacción entre las deficiencias y las barreras del entorno. Sus principios rectores (art. 3) incluyen:
+
+- El respeto a la dignidad inherente, la autonomía individual y la independencia.
+- La no discriminación.
+- La participación e inclusión plenas y efectivas en la sociedad.
+- El respeto a la diferencia y la aceptación de las personas con discapacidad como parte de la diversidad humana.
+- La igualdad de oportunidades.
+- La accesibilidad.
+- La igualdad entre el hombre y la mujer.
+- El respeto a la evolución de las facultades de los niños y las niñas con discapacidad.
+
+#### Artículos de especial relevancia para la IA y la integración:
+
+**Artículo 5 — Igualdad y no discriminación:**
+> Los Estados Partes prohibirán toda discriminación por motivos de discapacidad y garantizarán a todas las personas con discapacidad protección legal igual y efectiva contra la discriminación por cualquier motivo. A fin de promover la igualdad y eliminar la discriminación, los Estados Partes adoptarán todas las medidas pertinentes para asegurar la realización de **ajustes razonables**.
+
+**Artículo 9 — Accesibilidad:**
+> Los Estados Partes adoptarán medidas pertinentes para asegurar que las personas con discapacidad tengan acceso, en igualdad de condiciones con las demás, al entorno físico, al transporte, a la información y las comunicaciones, incluidos los sistemas y las tecnologías de la información y las comunicaciones, y a otros servicios e instalaciones abiertos al público.
+
+**Artículo 19 — Derecho a vivir de forma independiente y a ser incluido en la comunidad:**
+> Los Estados Partes reconocen el derecho en igualdad de condiciones de todas las personas con discapacidad a vivir en la comunidad, con opciones iguales a las de las demás, y adoptarán medidas efectivas para facilitar el pleno goce de este derecho.
+
+**Artículo 21 — Libertad de expresión y de opinión y acceso a la información:**
+> Los Estados Partes adoptarán todas las medidas pertinentes para que las personas con discapacidad puedan ejercer el derecho a la libertad de expresión y opinión, incluida la libertad de recabar, recibir y facilitar información e ideas en igualdad de condiciones con las demás.
+
+**Artículo 27 — Trabajo y empleo:**
+> Los Estados Partes reconocen el derecho de las personas con discapacidad a trabajar en igualdad de condiciones con las demás.
+
+### 2.2. Protocolo Facultativo
+
+El Protocolo Facultativo de la CDPD establece un mecanismo de comunicaciones individuales ante el Comité de los Derechos de las Personas con Discapacidad, permitiendo que personas o grupos de personas que hayan agotado los recursos internos presenten denuncias por vulneraciones de la Convención.
+
+### 2.3. Ratificación e incorporación al ordenamiento español
+
+España aprobó la CDPD y su Protocolo Facultativo el 3 de diciembre de 2007. Ambos instrumentos entraron en vigor en España el **3 de mayo de 2008**, formando parte plenamente del ordenamiento jurídico español e invocables ante las autoridades políticas, judiciales y administrativas.
+
+La incorporación interna se materializó mediante:
+- **Ley 26/2011**, de 1 de agosto, de adaptación normativa a la Convención Internacional sobre los Derechos de las Personas con Discapacidad.
+- **Real Decreto Legislativo 1/2013**, que refunde y actualiza toda la normativa sobre discapacidad.
+
+---
+
+## 3. Marco Europeo
+
+### 3.1. Carta de los Derechos Fundamentales de la UE
+
+La Carta de los Derechos Fundamentales de la Unión Europea, proclamada en 2000 y con fuerza vinculante desde la entrada en vigor del Tratado de Lisboa (2009), contiene dos artículos de especial relevancia:
+
+**Artículo 21 — No discriminación:**
+> "Se prohíbe toda discriminación, y en particular la fundada en el sexo, la raza, el color, las origen étnico o social, las características genéticas, la lengua, la religión o las convicciones personales, las opiniones políticas o de cualquier otra índole, la pertenencia a una minoría nacional, la fortuna, el nacimiento, la discapacidad, la edad u la orientación sexual."
+
+**Artículo 26 — Integración de las personas discapacitadas:**
+> "La Unión reconoce y respeta el derecho de las personas discapacitadas a beneficiarse de medidas que garanticen su autonomía, su integración social y profesional y su participación en la vida de la comunidad."
+
+Este artículo se basa en el artículo 15 de la Carta Social Europea y se inspira en el punto 26 de la Carta comunitaria de los derechos sociales fundamentales de los trabajadores.
+
+### 3.2. Estrategia Europea sobre los Derechos de las Personas con Discapacidad 2021-2030
+
+Adoptada en marzo de 2021, esta Estrategia constituye la hoja de ruta de la Comisión Europea para aplicar la CDPD en la UE y en los Estados miembros durante la década 2021-2030. Se estructura en **tres ejes principales**:
+
+1. **Disfrutar de los derechos de la Unión:** Libre circulación, participación política, tarjeta europea de discapacidad.
+2. **Nivel de vida digno y vida independiente:** Servicios sociales de calidad, vivienda accesible, empleo de calidad, protección social.
+3. **Igualdad de acceso y no discriminación:** Justicia, sanidad, educación, cultura, ocio, deporte, turismo.
+
+#### Áreas prioritarias y relación con la IA:
+
+- **Accesibilidad:** Entendida como herramienta para mejorar los derechos, la autonomía y la igualdad. La accesibilidad de entornos físicos y virtuales es requisito previo para la plena participación.
+- **Transformación digital:** La Estrategia señala que "acelerar la transformación digital y la transición verde ofrece oportunidades, gracias al uso de las tecnologías de la información y de las comunicaciones, la inteligencia artificial y la robótica para diseñar servicios adaptados a las necesidades de las personas con discapacidad".
+- **Empleo:** La tasa de empleo de las personas con discapacidad es muy inferior a la de las personas sin discapacidad. La Estrategia insta a los Estados miembros a implementar buenas prácticas y garantizar la financiación de vivienda social accesible.
+- **Educación inclusiva:** Apoyo a la formación del profesorado, adaptación de currículos, diplomas alternativos.
+
+#### Iniciativas emblemáticas:
+- **AccessibleEU:** Centro de recursos para la accesibilidad.
+- **Tarjeta Europea de Discapacidad:** Reconocimiento mutuo de la discapacidad entre Estados miembros.
+- **Paquete de Empleo para Personas con Discapacidad:** Medidas para mejorar la tasa de empleo.
+- **Plataforma de Discapacidad:** Diálogo estructurado con organizaciones representativas.
+
+En noviembre de 2025, el Parlamento Europeo aprobó un informe actualizando sus prioridades, incluyendo una **garantía de empleo y competencias financiada por la UE**, e instando a la Comisión a proponer una **definición común europea de discapacidad**.
+
+### 3.3. Directiva 2000/78/CE — Igualdad de trato en el empleo y la ocupación
+
+Aprobada el 27 de noviembre de 2000, esta Directiva establece un marco general para luchar contra la discriminación por motivos de religión o convicciones, **discapacidad**, edad u orientación sexual en el ámbito del empleo.
+
+#### Conceptos clave:
+
+**Discriminación directa (art. 2.2.a):**
+> "Existirá discriminación directa cuando una persona sea, haya sido o pudiera ser tratada de manera menos favorable que otra en situación análoga por alguno de los motivos mencionados."
+
+**Discriminación indirecta (art. 2.2.b):**
+> "Existirá discriminación indirecta cuando una disposición, criterio o práctica aparentemente neutros pueda ocasionar una desventaja particular a personas con una discapacidad determinada."
+
+**Acoso (art. 2.3):**
+> El acoso constituye discriminación cuando se produce un comportamiento no deseado relacionado con la discapacidad que tenga como objetivo o consecuencia atentar contra la dignidad de la persona y crear un entorno intimidatorio, hostil, degradante, humillante u ofensivo.
+
+**Ajustes razonables (art. 5):**
+> "A fin de garantizar la observancia del principio de igualdad de trato en relación con las personas con discapacidades, se realizarán ajustes razonables. Esto significa que los empresarios tomarán las medidas adecuadas, en función de las necesidades de cada situación concreta, para permitir a las personas con discapacidades acceder al empleo, tomar parte en el mismo o progresar profesionalmente, o para que se les ofrezca formación, salvo que esas medidas supongan una carga excesiva para el empresario."
+
+**Acción positiva (art. 7):**
+> El principio de igualdad de trato no impedirá que un Estado miembro mantenga o adopte medidas específicas destinadas a prevenir o compensar las desventajas ocasionadas por la discapacidad.
+
+**Ámbito de aplicación:**
+- Condiciones de acceso al empleo o actividad por cuenta propia.
+- Formación profesional.
+- Condiciones de empleo y trabajo (incluidas despido y remuneración).
+- Afiliación y participación en organizaciones de trabajadores o empresarios.
+
+España transpuso esta Directiva mediante la **Ley 62/2003** y, posteriormente, la **Ley 15/2022** la reforzó ampliando la protección a todos los ámbitos de la vida social.
+
+### 3.4. Directiva (UE) 2019/882 — European Accessibility Act (EAA)
+
+Aprobada el 17 de abril de 2019, la EAA establece requisitos de accesibilidad armonizados para productos y servicios en el mercado único europeo. Su objetivo es eliminar barreras y garantizar que las personas con discapacidad puedan participar plenamente en la sociedad.
+
+#### Productos y servicios cubiertos:
+- Equipos informáticos y sistemas operativos.
+- Terminales de autoservicio (cajeros, máquinas expendedoras, check-in).
+- Equipos de telecomunicaciones y lectores de libros electrónicos.
+- Servicios de transporte.
+- Servicios bancarios electrónicos.
+- Comercio electrónico.
+- Servicios audiovisuales.
+
+#### Requisitos técnicos:
+- La norma armonizada **EN 301 549** define los requisitos técnicos e incorpora los criterios de accesibilidad de nivel A y AA de las **WCAG 2.1**.
+- Principios POUR: Perceptible, Operable, Comprensible y Robusto.
+
+#### Fechas clave:
+- **28 de junio de 2022:** Fecha límite de transposición.
+- **28 de junio de 2025:** Entrada en vigor de las obligaciones principales para productos y servicios digitales nuevos.
+- **28 de junio de 2030:** Plazo adicional para productos físicos y determinados contratos/terminales.
+
+### 3.5. Reglamento (UE) 2024/1689 — Ley de Inteligencia Artificial (AI Act)
+
+Vigente desde el **1 de agosto de 2024**, el AI Act es la primera normativa global vinculante sobre inteligencia artificial. Clasifica los sistemas según niveles de riesgo y establece obligaciones para garantizar el respeto a los derechos fundamentales, incluida la protección de los colectivos vulnerables como las personas con discapacidad.
+
+#### Protección específica de personas con discapacidad:
+
+**Prácticas de IA prohibidas (Art. 5):**
+- Se prohíben las prácticas que manipulen a personas mediante técnicas subliminales o que **aprovechen las vulnerabilidades de grupos vulnerables, como las personas con discapacidad**, para alterar de manera sustancial su comportamiento de un modo que es probable que les provoque perjuicios físicos o psicológicos.
+
+**Sistemas de IA de alto riesgo:**
+- Los sistemas de IA que puedan afectar seriamente a los derechos de personas con discapacidad se clasifican como de alto riesgo.
+- Los proveedores deben implementar sistemas de gestión de riesgos.
+- Deben garantizar el cumplimiento de los requisitos de accesibilidad desde el diseño, incluidas la Directiva (UE) 2016/2102 y la Directiva (UE) 2019/882.
+
+**Considerandos relevantes:**
+> "Como signatarios de la Convención sobre los Derechos de las Personas con Discapacidad, la Unión y todos los Estados miembros están legalmente obligados a proteger a las personas con discapacidad contra la discriminación y a promover su igualdad, a garantizar que las personas con discapacidad tengan acceso, en igualdad de condiciones con las demás, a las tecnologías y sistemas de la información y las comunicaciones."
+
+> "La aplicación de los principios de diseño universal a todas las nuevas tecnologías y servicios debe garantizar el acceso pleno e igualitario de todas las personas a las que puedan afectar las tecnologías de IA, incluidas las personas con discapacidad."
+
+#### Derechos de las personas usuarias:
+- Derecho a ser informadas cuando interactúan con un sistema de IA y no con un ser humano.
+- Derecho a obtener explicaciones sobre decisiones automatizadas.
+- Derecho a no ser sometidas a evaluación de riesgos basada en perfilado que pueda generar discriminación.
+
+### 3.6. Convención Marco del Consejo de Europa sobre IA y Derechos Humanos
+
+Aprobada en 2024, esta Convención consagra el principio de igualdad y no discriminación en el ámbito de la IA. Su **Artículo 18** obliga a los Estados parte a tener en cuenta **"las necesidades y vulnerabilidades específicas en relación con el respeto de los derechos de las personas con discapacidad y de los niños"**.
+
+Los Estados deben garantizar que las personas afectadas por decisiones automatizadas vulneradoras de derechos puedan:
+- Acceder a información suficiente para impugnar esas decisiones.
+- Contar con recursos reales y efectivos.
+- Ser informadas cuando interactúan con un sistema de IA.
+
+### 3.7. Reglamento (UE) 2016/679 — RGPD
+
+El Reglamento General de Protección de Datos es esencial para proteger a las personas con discapacidad frente a los riesgos de la IA, ya que:
+
+- Regula el tratamiento de datos sensibles (salud, discapacidad, información biométrica).
+- Limita la toma de decisiones automatizadas sin supervisión humana (art. 22).
+- Obliga a garantizar transparencia, accesibilidad y no discriminación.
+- Exige evaluaciones de impacto en protección de datos (EIPD) para tratamientos de alto riesgo.
+
+Las personas con discapacidad suelen ver tratados datos especialmente sensibles: diagnósticos médicos, informes de dependencia, datos de rehabilitación, información biométrica utilizada en servicios digitales.
+
+### 3.8. Directiva (UE) 2016/2102 — Accesibilidad de los sitios web del sector público
+
+Esta Directiva exige que los sitios web y aplicaciones móviles de las administraciones públicas cumplan con estándares de accesibilidad (EN 301 549). Aunque se centra en el sector público, sentó las bases técnicas para la EAA y estableció un precedente normativo en materia de accesibilidad digital.
+
+---
+
+## 4. Marco Constitucional y Estatal Español
+
+### 4.1. Constitución Española de 1978
+
+La Constitución Española contiene varios preceptos fundamentales para la integración de personas con discapacidad:
+
+**Artículo 9.2:**
+> "Corresponde a los poderes públicos promover las condiciones para que la libertad y la igualdad del individuo y de los grupos en que se integra sean reales y efectivas; remover los obstáculos que dificulten o impidan su plenitud y facilitar la participación de todos los ciudadanos en la vida política, económica, cultural y social."
+
+**Artículo 14:**
+> "Los españoles son iguales ante la ley, sin que pueda prevalecer discriminación alguna por razón de nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social."
+
+**Artículo 49:**
+> "Los poderes públicos realizarán una política de previsión, tratamiento, rehabilitación e integración de los disminuidos físicos, sensoriales y psíquicos, a los que se prestará la atención especializada que requieran y se les amparará especialmente para el disfrute de los derechos que esta Título otorga a todos los ciudadanos."
+
+Este mandato constitucional es la base de toda la normativa posterior sobre discapacidad en España.
+
+### 4.2. Ley 26/2011 — Adaptación normativa a la CDPD
+
+Aprobada el 1 de agosto de 2011, esta Ley adaptó el ordenamiento jurídico español a la Convención Internacional sobre los Derechos de las Personas con Discapacidad, ratificada por España en 2007. Sus principales aportaciones incluyen:
+
+- Modificación de diversas leyes para eliminar términos discriminatorios.
+- Refuerzo de los derechos de participación y accesibilidad.
+- Adaptación de procedimientos administrativos y judiciales.
+- Reconocimiento de la capacidad jurídica de las personas con discapacidad en igualdad de condiciones.
+
+### 4.3. Real Decreto Legislativo 1/2013 — Ley General de Discapacidad (LGD)
+
+Aprobado el 29 de noviembre de 2013, el RDL 1/2013 aprueba el Texto Refundido de la **Ley General de derechos de las personas con discapacidad y de su inclusión social**. Es la norma fundamental en materia de discapacidad en España, refundiendo y actualizando la anterior Ley 13/1982 (LISMI).
+
+#### Principios fundamentales:
+- **Igualdad de oportunidades y no discriminación.**
+- **Accesibilidad universal** en todos los ámbitos de la sociedad.
+- **Autonomía personal** y participación plena.
+- **Diseño para todos** (diseño universal).
+
+#### Obligación de reserva de puestos de trabajo (art. 42):
+> Las empresas públicas y privadas con **50 o más trabajadores** están obligadas a contratar a personas con discapacidad en una proporción no inferior al **2% de su plantilla**.
+
+#### Medidas alternativas a la contratación directa:
+Cuando la contratación directa no sea viable, la ley permite:
+1. **Donaciones o patrocinios** a entidades sin ánimo de lucro cuyo fin fundacional sea la inclusión laboral (≥ 1,5 × IPREM por plaza no cubierta).
+2. **Contrato de suministro o servicios** con un Centro Especial de Empleo (CEE) o autónomo con discapacidad (≥ 3 × IPREM).
+3. **Enclave laboral:** grupo de trabajadores de un CEE dentro de la empresa (≥ 3 × IPREM).
+
+#### Régimen sancionador:
+- **Leve:** 301 € – 30.000 €
+- **Grave:** 30.001 € – 90.000 €
+- **Muy grave:** 90.001 € – 1.000.000 €
+
+Además, el incumplimiento puede conllevar:
+- Pérdida de beneficios fiscales.
+- Inhabilitación para contratar con la Administración Pública.
+- Exclusión de subvenciones y ayudas.
+
+#### Relación con la IA:
+Aunque la LGD no regula directamente la IA, sus principios de igualdad, no discriminación, accesibilidad, autonomía y participación son esenciales para orientar el desarrollo, implementación y supervisión de cualquier sistema de IA que afecte a personas con discapacidad.
+
+### 4.4. Ley 15/2022 — Ley Integral para la Igualdad de Trato y la No Discriminación
+
+Aprobada el 12 de julio de 2022, esta Ley constituye el marco horizontal más amplio de protección contra la discriminación en España.
+
+#### Ámbito subjetivo (art. 2):
+> "Se reconoce el derecho de toda persona a la igualdad de trato y no discriminación con independencia de su nacionalidad... Nadie podrá ser discriminado por razón de... **discapacidad**... o cualquier otra condición o circunstancia personal o social."
+
+#### Ámbitos de aplicación:
+- Educación (art. 13).
+- Empleo y actividad profesional.
+- Sanidad (art. 15): prohibición expresa de excluir a personas con discapacidad de tratamientos sanitarios.
+- Vivienda (art. 20): prohibición de discriminación en venta, arrendamiento o intermediación.
+- Bienes y servicios ofrecidos al público.
+- Actividades y servicios de carácter público.
+
+#### Accesibilidad y discapacidad:
+- Se garantiza que las personas víctimas de discriminación con discapacidad tengan acceso integral a la información en formato accesible: **lectura fácil, Braille, lengua de signos, sistemas alternativos y aumentativos**.
+- Los niños, niñas y adolescentes tienen derecho a recibir información en lenguaje claro y comprensible, en formatos accesibles sensorial y cognitivamente.
+
+#### IA y toma de decisiones automatizadas:
+> "Los sitios web y las aplicaciones informáticas **tenderán a cumplir los requisitos de accesibilidad** para garantizar la igualdad y la no discriminación en el acceso de las personas usuarias, en particular de las personas con discapacidad y de las personas mayores."
+
+#### Régimen sancionador:
+En relación con las personas con discapacidad, será de aplicación preferente lo previsto en la LGD (RDL 1/2013). En el orden social, el régimen aplicable es el de la Ley de Infracciones y Sanciones en el Orden Social.
+
+### 4.5. Ley 11/2023 — Transposición de la EAA
+
+Publicada el 8 de mayo de 2023, la Ley 11/2023 transpone la Directiva (UE) 2019/882 (EAA) al ordenamiento jurídico español.
+
+#### Objeto:
+Establecer requisitos legales y técnicos para que productos y servicios digitales sean accesibles para todas las personas, incluidas las personas con discapacidad.
+
+#### Ámbito de aplicación:
+- Equipos informáticos y sistemas operativos.
+- Terminales de autoservicio (cajeros, máquinas expendedoras).
+- Servicios de telecomunicaciones.
+- Servicios de transporte.
+- Servicios bancarios electrónicos.
+- Comercio electrónico.
+- Servicios audiovisuales.
+- **Sitios web y aplicaciones móviles** de las empresas incluidas en el ámbito.
+
+#### Requisitos técnicos:
+- Cumplimiento de la norma **EN 301 549**.
+- Integración de los criterios **WCAG 2.1 nivel A y AA**.
+- Aplicación de los principios POUR.
+
+#### Relación con la IA:
+La Ley 11/2023 es un puente entre el marco constitucional de derechos fundamentales y la digitalización inclusiva. Su relación con la IA es indirecta pero esencial:
+- Obliga a que los sistemas digitales, muchos de ellos mediados por IA, sean accesibles.
+- Complementa el AI Act europeo y la futura Ley española de IA, que se ocupan de la ética, los sesgos y la seguridad.
+- Garantiza que la transformación digital y el despliegue de la IA en España no dejen atrás a las personas con discapacidad.
+
+### 4.6. Ley Orgánica 3/2018 — LOPDGDD
+
+La Ley Orgánica de Protección de Datos Personales y Garantía de los Derechos Digitales adapta la legislación española al RGPD.
+
+#### Aspectos relevantes para personas con discapacidad e IA:
+- El tratamiento de datos personales mediante sistemas de IA debe cumplir con los principios de transparencia, limitación de finalidad, minimización de datos, exactitud, integridad y confidencialidad.
+- Reconoce la necesidad de una **evaluación de impacto relativa a la protección de datos** cuando se utilicen tecnologías de IA que puedan implicar un alto riesgo para los derechos y libertades, especialmente en el caso de personas con discapacidad.
+- Establece que los sitios web y aplicaciones informáticas deben cumplir con los requisitos de accesibilidad para garantizar la igualdad y la no discriminación.
+- Refuerza los derechos digitales de la ciudadanía, incluyendo aspectos relacionados con la accesibilidad digital.
+
+### 4.7. Carta Española de Derechos Digitales
+
+Aprobada en julio de 2021, la Carta establece derechos fundamentales en el entorno digital adaptados a las nuevas realidades tecnológicas. Aunque no aborda específicamente la discapacidad, sus principios son plenamente aplicables:
+
+- Derecho a la educación digital.
+- Derecho a la no discriminación en el entorno digital.
+- Derecho a la accesibilidad tecnológica.
+- Derecho a la protección frente a decisiones automatizadas.
+
+El Comité Español de Representantes de Personas con Discapacidad (CERMI) ha destacado la necesidad de que cualquier sistema de IA respete los mandatos de tratados internacionales de derechos humanos y la Carta de Derechos Digitales.
+
+### 4.8. Estrategia Española sobre Discapacidad 2022-2030
+
+Aprobada por el Consejo de Ministros el 3 de mayo de 2022, constituye la hoja de ruta integral para garantizar la inclusión plena y efectiva de las personas con discapacidad en todos los ámbitos de la sociedad española.
+
+#### Características:
+- Se fundamenta en la CDPD y en el marco europeo.
+- Enfoque interseccional que incorpora la perspectiva de género, la cohesión territorial y la sostenibilidad.
+- Aunque no aborda específicamente la IA, sus principios y objetivos son plenamente aplicables al contexto digital y tecnológico.
+
+#### Prioridades:
+- Autonomía personal y vida independiente.
+- Accesibilidad universal.
+- Empleo y formación.
+- Educación inclusiva.
+- Sanidad y servicios sociales.
+- Participación política y ciudadana.
+
+### 4.9. Anteproyecto de Ley para el Buen Uso y la Gobernanza de la IA en España
+
+Aprobado en marzo de 2025, este Anteproyecto establece un marco normativo para regular el uso ético, inclusivo y beneficioso de la IA, alineándose con el Reglamento (UE) 2024/1689.
+
+#### Medidas específicas para personas con discapacidad:
+
+1. **Protección frente a prácticas discriminatorias:**
+   - Prohibición del uso de IA para técnicas subliminales que manipulen decisiones o exploten vulnerabilidades por edad, **discapacidad** o situación socioeconómica.
+
+2. **Accesibilidad universal:**
+   - Impulso de la accesibilidad digital como un derecho.
+   - Promoción de entornos digitales inclusivos para todas las personas, incluidas aquellas con discapacidad.
+
+3. **Participación activa:**
+   - Fomento de la participación de las personas con discapacidad y sus organizaciones representativas en el desarrollo, diseño y evaluación de sistemas de IA.
+
+4. **Sello de calidad de algoritmos:**
+   - Promoción de un sello de calidad que garantice la ética y la no discriminación.
+
+---
+
+## 5. Marco Autonómico
+
+Las comunidades autónomas están desarrollando normativas específicas que afectan a la IA y la discapacidad:
+
+### 5.1. Galicia — Ley 2/2025, de 2 de abril
+
+Establece un marco normativo pionero en España con un enfoque inclusivo y ético. Destaca:
+- Principio de **universalidad y accesibilidad**: los sistemas de IA implementados por la Administración autonómica deben ser accesibles a todas las personas, incluyendo aquellas con discapacidad.
+- Superación de brechas digitales derivadas de razones económicas, de edad o discapacidad.
+
+### 5.2. Andalucía — Ley Andalucía Digital (LADI)
+
+En proceso de aprobación, busca impulsar la digitalización con un enfoque especial en la IA. Sus objetivos incluyen:
+- Reducir la brecha digital.
+- Mejorar la accesibilidad a la tecnología.
+- Asegurar que la transformación digital llegue a todos los andaluces, independientemente de sus recursos.
+
+### 5.3. Extremadura
+
+En marzo de 2023 aprobó un decreto ley para implementar la Estrategia Extremeña de Inteligencia Artificial, convirtiéndose en la primera comunidad autónoma en España con una regulación específica. Busca:
+- Garantizar una gestión ética de los datos.
+- Evitar sesgos en los algoritmos.
+- Promover la inclusión de las personas con discapacidad en el desarrollo y aplicación de la IA.
+
+### 5.4. País Vasco — Registro de Algoritmos
+
+El Gobierno Vasco ha implementado un **Registro de Algoritmos** para transparentar el uso de la IA en la administración pública. Incluye sistemas de IA en uso en áreas como salud, vivienda y atención ciudadana, reflejando el compromiso con una IA ética y responsable.
+
+### 5.5. Cataluña — Metodología APDCAT
+
+En enero de 2025, la Autoritat Catalana de Protecció de Dades (APDCAT) presentó una metodología pionera en Europa para la **evaluación de impacto en los derechos fundamentales** del uso de la IA. Tiene un enfoque inclusivo, reconociendo que las personas con discapacidad pueden ser especialmente vulnerables a los riesgos asociados con la IA.
+
+### 5.6. Cantabria — Ley de neuroderechos
+
+Cantabria está promoviendo la primera ley europea destinada a proteger los **neuroderechos y los datos cerebrales**, en respuesta al aumento de tecnologías que recopilan información neuronal sin una regulación clara.
+
+---
+
+## 6. Implicaciones Específicas para Agentes de IA
+
+### 6.1. Accesibilidad universal y diseño para todos
+
+Los agentes de IA deben cumplir con los principios de **diseño universal** y **accesibilidad desde el diseño** (accessibility by design):
+
+- **Interfaces accesibles:** Compatibilidad con tecnologías de asistencia (lectores de pantalla, navegación por voz, dispositivos de seguimiento ocular).
+- **Contenido multisensorial:** Texto, audio, elementos visuales, subtitulado, lengua de signos.
+- **Personalización:** Permitir ajustes de formato del texto, contraste, tamaño, velocidad de interacción.
+- **Compatibilidad con WCAG 2.1 AA:** Cumplimiento de la norma EN 301 549.
+- **Lectura fácil:** Información en formatos comprensibles para personas con discapacidad intelectual.
+
+**Fundamento legal:** Art. 9 CDPD; Art. 26 Carta de Derechos Fundamentales UE; Directiva (UE) 2019/882; Ley 11/2023; RDL 1/2013 (LGD).
+
+### 6.2. No discriminación algorítmica
+
+Los agentes de IA no deben discriminar por discapacidad en ningún ámbito:
+
+- **Empleo:** Los sistemas de selección de personal no deben excluir a candidatos con discapacidad.
+- **Educación:** Los sistemas de evaluación o admisión no deben penalizar a estudiantes con discapacidad.
+- **Servicios públicos:** Los sistemas de asignación de recursos no deben perjudicar a personas con discapacidad.
+- **Sanidad:** Los algoritmos de priorización o diagnóstico no deben discriminar por discapacidad.
+
+**Fundamento legal:** Art. 5 CDPD; Art. 21 Carta de Derechos Fundamentales UE; Directiva 2000/78/CE; Ley 15/2022; RDL 1/2013 (LGD); Reglamento (UE) 2024/1689 (AI Act).
+
+### 6.3. Ajustes razonables
+
+Los sistemas de IA deben permitir y facilitar **ajustes razonables**:
+
+- Adaptación de interfaces a necesidades específicas.
+- Provisión de formatos alternativos de comunicación.
+- Flexibilidad en los tiempos y modos de interacción.
+- Posibilidad de intervención humana cuando sea necesario.
+
+**Fundamento legal:** Art. 5 CDPD; Art. 5 Directiva 2000/78/CE; RDL 1/2013 (LGD).
+
+### 6.4. Transparencia, explicabilidad y supervisión humana
+
+- **Información clara:** Las personas deben saber cuándo interactúan con un sistema de IA y no con un ser humano.
+- **Explicabilidad:** Las decisiones automatizadas que afecten a personas con discapacidad deben ser explicables y susceptibles de revisión.
+- **Supervisión humana:** Las decisiones con impacto significativo en derechos deben contar con intervención humana significativa, no meramente formal.
+- **Derecho a impugnar:** Garantizar mecanismos efectivos para impugnar decisiones automatizadas.
+
+**Fundamento legal:** Art. 22 RGPD; Reglamento (UE) 2024/1689 (AI Act); Convención Marco del Consejo de Europa sobre IA; Anteproyecto de Ley española de IA.
+
+### 6.5. Protección de datos y privacidad
+
+- **Datos sensibles:** Los datos relativos a la discapacidad son datos especiales (art. 9 RGPD) y requieren bases jurídicas específicas.
+- **Minimización:** Solo recopilar los datos estrictamente necesarios.
+- **Seguridad:** Garantizar la protección frente a filtraciones que puedan generar discriminación laboral, social o en seguros.
+- **Evaluación de impacto:** Realizar EIPD cuando se traten datos de personas con discapacidad con sistemas de IA.
+
+**Fundamento legal:** RGPD (UE) 2016/679; LOPDGDD; Art. 22 CDPD.
+
+### 6.6. Participación de personas con discapacidad
+
+- **Diseño participativo:** Las personas con discapacidad y sus organizaciones representativas deben participar en el diseño, desarrollo y evaluación de los sistemas de IA.
+- **Consulta previa:** Ante la introducción de sistemas de IA en servicios públicos, debe consultarse a las organizaciones representativas.
+- **Pruebas con usuarios reales:** Los sistemas deben ser probados por personas con distintos tipos de discapacidad antes de su despliegue.
+
+**Fundamento legal:** Art. 4.3 CDPD (principio de participación); Estrategia Europea 2021-2030; Anteproyecto de Ley española de IA.
+
+### 6.7. Sesgos en datos de entrenamiento
+
+- **Representatividad:** Los conjuntos de datos deben incluir representación adecuada de personas con distintos tipos de discapacidad.
+- **Datos desagregados:** La falta de datos desagregados sobre discapacidad implica que las personas con discapacidad están infrarrepresentadas en los sistemas de IA, lo que puede derivar en sesgos algorítmicos.
+- **Auditoría de sesgos:** Realizar auditorías periódicas para detectar y corregir sesgos discriminatorios.
+- **Diversidad en equipos:** Promover la diversidad en los equipos de desarrollo de IA.
+
+**Fundamento legal:** Reglamento (UE) 2024/1689 (AI Act); Estrategia Española sobre Discapacidad 2022-2030; informes de CERMI.
+
+---
+
+## 7. Síntesis de Obligaciones para Desarrolladores de Agentes-IA
+
+| Obligación | Fundamento legal | Requisito concreto |
+|---|---|---|
+| **Accesibilidad** | Art. 9 CDPD; Directiva (UE) 2019/882; Ley 11/2023; RDL 1/2013 | Cumplir EN 301 549 y WCAG 2.1 AA; compatibilidad con tecnologías de asistencia; contenido en lectura fácil |
+| **No discriminación** | Art. 5 CDPD; Art. 21 Carta UE; Directiva 2000/78/CE; Ley 15/2022; AI Act | Prohibición de sesgos algorítmicos por discapacidad; igualdad en empleo, educación, sanidad y servicios |
+| **Ajustes razonables** | Art. 5 CDPD; Art. 5 Directiva 2000/78/CE | Facilitar adaptaciones de interfaz, formatos alternativos, flexibilidad de interacción |
+| **Transparencia** | Art. 22 RGPD; AI Act; Anteproyecto Ley IA | Informar cuando se interactúa con IA; explicar decisiones automatizadas; permitir revisión humana |
+| **Protección de datos** | RGPD; LOPDGDD | Tratamiento especial de datos de discapacidad; minimización; EIPD; seguridad |
+| **Participación** | Art. 4.3 CDPD; Estrategia Europea 2021-2030 | Consulta a organizaciones representativas; pruebas con usuarios con discapacidad; diseño participativo |
+| **Supervisión humana** | AI Act; Convención Consejo Europa IA | Intervención humana significativa en decisiones de alto riesgo; derecho a impugnar |
+| **Diseño universal** | Art. 9 CDPD; Estrategia Europea 2021-2030 | Accesibilidad desde la concepción; no requerir adaptaciones adicionales |
+
+---
+
+## 8. Glosario
+
+| Término | Definición |
+|---|---|
+| **CDPD** | Convención sobre los Derechos de las Personas con Discapacidad de la ONU. |
+| **EAA** | European Accessibility Act (Directiva (UE) 2019/882). |
+| **AI Act** | Reglamento (UE) 2024/1689 por el que se establecen normas armonizadas en materia de inteligencia artificial. |
+| **RGPD** | Reglamento General de Protección de Datos (UE) 2016/679. |
+| **LGD** | Ley General de derechos de las personas con discapacidad y de su inclusión social (RDL 1/2013). |
+| **LOPDGDD** | Ley Orgánica de Protección de Datos Personales y Garantía de los Derechos Digitales. |
+| **WCAG** | Web Content Accessibility Guidelines (Pautas de Accesibilidad para el Contenido Web). |
+| **EN 301 549** | Norma europea armonizada que define requisitos de accesibilidad para productos y servicios ICT. |
+| **Ajustes razonables** | Modificaciones y adaptaciones necesarias y adecuadas que no impongan una carga desproporcionada. |
+| **Diseño universal** | Diseño de productos, entornos, programas y servicios para que sean utilizables por todas las personas. |
+| **EIPD** | Evaluación de Impacto en la Protección de Datos. |
+| **CEE** | Centro Especial de Empleo. |
+| **IPREM** | Indicador Público de Renta de Efectos Múltiples. |
+| **CERMI** | Comité Español de Representantes de Personas con Discapacidad. |
+| **POUR** | Perceptible, Operable, Comprensible y Robusto (principios de accesibilidad). |
+
+---
+
+## 9. Referencias Normativas
+
+### Internacionales
+- Convención de las Naciones Unidas sobre los Derechos de las Personas con Discapacidad (2006).
+- Protocolo Facultativo de la Convención sobre los Derechos de las Personas con Discapacidad.
+
+### Europeas
+- Carta de los Derechos Fundamentales de la Unión Europea (2000/2012).
+- Estrategia Europea sobre los Derechos de las Personas con Discapacidad 2021-2030 (COM/2021/101 final).
+- Directiva 2000/78/CE del Consejo, de 27 de noviembre de 2000.
+- Directiva (UE) 2019/882 del Parlamento Europeo y del Consejo, de 17 de abril de 2019 (EAA).
+- Directiva (UE) 2016/2102 del Parlamento Europeo y del Consejo, de 26 de octubre de 2016.
+- Reglamento (UE) 2024/1689 del Parlamento Europeo y del Consejo, de 13 de junio de 2024 (AI Act).
+- Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016 (RGPD).
+- Convención Marco del Consejo de Europa sobre Inteligencia Artificial y Derechos Humanos, Democracia y Estado de Derecho (2024).
+
+### Españolas
+- Constitución Española de 1978.
+- Ley 26/2011, de 1 de agosto, de adaptación normativa a la Convención Internacional sobre los Derechos de las Personas con Discapacidad.
+- Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social.
+- Ley 15/2022, de 12 de julio, integral para la igualdad de trato y la no discriminación.
+- Ley 11/2023, de 8 de mayo, de transposición de directivas de la Unión Europea en materia de accesibilidad universal.
+- Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y Garantía de los Derechos Digitales.
+- Carta Española de Derechos Digitales (2021).
+- Estrategia Española sobre Discapacidad 2022-2030 (aprobada por el Consejo de Ministros el 3 de mayo de 2022).
+- Anteproyecto de Ley para el Buen Uso y la Gobernanza de la Inteligencia Artificial en España (marzo 2025).
+- Ley 2/2025, de 2 de abril, para el desarrollo e impulso de la inteligencia artificial en Galicia.
+- Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público.
+
+### Técnicas
+- Norma UNE-EN 301 549 V3.2.1 (2021) — Requisitos de accesibilidad para productos y servicios TIC.
+- WCAG 2.1 (Web Content Accessibility Guidelines 2.1) — Niveles A y AA.
+
+---
+
+> **Nota metodológica:** Este documento ha sido elaborado con rigor jurídico a partir de fuentes oficiales (BOE, DOUE, ONU, FRA, EUR-Lex) y académicas. Se recomienda verificar la vigencia de las normas citadas ante posibles modificaciones posteriores a la fecha de elaboración. Para la documentación de un agente-IA, se aconseja incorporar este marco normativo en la sección de cumplimiento legal y en las políticas de gobernanza del sistema.
 
