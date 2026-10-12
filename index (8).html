@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://www.uv.es/mia1/laura/ -->
+<html lang="ca"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiscAI — Discapacitat + IA</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1e40af">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="DiscAI">
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #1e40af;
+            --primary-blue-hover: #1d4ed8;
+            --accent-color: #3b82f6;
+            --bg-white: #ffffff;
+            --bg-light: #f8fafc;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --card-shadow: 0 20px 40px -15px rgba(30, 64, 175, 0.08), 0 10px 25px -10px rgba(0, 0, 0, 0.05);
+            --base-font-size: 1rem;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-size: var(--base-font-size);
+        }
+        header {
+            background-color: var(--bg-white);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        }
+        .header-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .brand-logo {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+        }
+        .brand-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            letter-spacing: -0.02em;
+        }
+        .brand-subtitle {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+        .nav-controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .accessibility-nav {
+            display: flex;
+            gap: 0.3rem;
+            background-color: #f1f5f9;
+            padding: 5px;
+            border-radius: 50px;
+        }
+        .accessibility-btn {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            color: var(--text-dark);
+            padding: 0.35rem 0.7rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+            border-radius: 40px;
+            transition: all 0.2s ease;
+        }
+        .accessibility-btn:hover {
+            background-color: rgba(30, 64, 175, 0.1);
+            color: var(--primary-blue);
+        }
+        .lang-nav {
+            display: flex;
+            gap: 0.4rem;
+            background-color: #f1f5f9;
+            padding: 5px;
+            border-radius: 50px;
+            flex-wrap: wrap;
+        }
+        .lang-btn, .tab-btn {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            color: var(--text-muted);
+            padding: 0.45rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 40px;
+            transition: all 0.25s ease;
+            text-decoration: none;
+        }
+        .lang-btn:hover, .tab-btn:hover {
+            color: var(--primary-blue);
+            background-color: rgba(30, 64, 175, 0.06);
+        }
+        .lang-btn.active, .tab-btn.active {
+            background-color: var(--primary-blue);
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(30, 64, 175, 0.25);
+        }
+        main {
+            max-width: 900px;
+            width: 100%;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-card {
+            background-color: var(--bg-white);
+            border-radius: 24px;
+            padding: 3rem 2.5rem;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--border-color);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+        .tab-content {
+            display: none;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+        .tab-content.active {
+            display: flex;
+        }
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            text-align: center;
+        }
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--border-color);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+        .intro-box {
+            width: 100%;
+            max-width: 720px;
+            background-color: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            line-height: 1.7;
+            text-align: center;
+            color: var(--text-dark);
+        }
+        .links-container {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btn-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #f1f5f9;
+            color: var(--primary-blue);
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s;
+        }
+        .btn-link:hover {
+            background-color: var(--primary-blue);
+            color: white;
+            border-color: var(--primary-blue);
+        }
+        .chat-container {
+            width: 100%;
+            max-width: 720px;
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+        .chat-messages {
+            padding: 1.5rem;
+            height: 280px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            background: #fdfdfd;
+        }
+        .message {
+            padding: 0.8rem 1rem;
+            border-radius: 12px;
+            max-width: 80%;
+            line-height: 1.5;
+        }
+        .message.user {
+            background-color: #eff6ff;
+            color: var(--primary-blue);
+            align-self: flex-end;
+            border-bottom-right-radius: 2px;
+        }
+        .message.assistant {
+            background-color: #f1f5f9;
+            color: var(--text-dark);
+            align-self: flex-start;
+            border-bottom-left-radius: 2px;
+        }
+        .chat-input-area {
+            display: flex;
+            border-top: 1px solid var(--border-color);
+            background: #ffffff;
+            padding: 0.75rem;
+            gap: 0.5rem;
+            align-items: center;
+        }
+        .chat-input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            outline: none;
+        }
+        .chat-input:focus {
+            border-color: var(--primary-blue);
+        }
+        .chat-btn {
+            background-color: var(--primary-blue);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .chat-btn:hover {
+            background-color: var(--primary-blue-hover);
+        }
+        .mic-btn {
+            background-color: #e2e8f0;
+            color: var(--text-dark);
+            border: none;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .mic-btn.recording {
+            background-color: #dc2626;
+            color: white;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        footer {
+            background-color: var(--bg-white);
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            padding: 2rem 1rem;
+            color: var(--text-muted);
+            margin-top: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+        @media (max-width: 640px) {
+            .header-container { justify-content: center; }
+            .main-card { padding: 2rem 1.25rem; }
+            .chat-input-area { flex-direction: column; align-items: stretch; }
+        }
+
+        .brand-logo-icon {
+            height: 42px;
+            width: auto;
+            border-radius: 10px;
+            margin-right: 0.6rem;
+        }
+        .brand-logo { flex-direction: row; align-items: center; }
+        .hero-logo {
+            width: 100%;
+            max-width: 340px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(30, 64, 175, 0.12);
+        }
+        .download-container {
+            width: 100%;
+            max-width: 720px;
+            background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
+            border: 2px solid var(--primary-blue);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+        .download-title {
+            color: var(--primary-blue);
+            font-size: 1.4rem;
+            font-weight: 800;
+        }
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background-color: var(--primary-blue);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.9rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 6px 18px rgba(30, 64, 175, 0.3);
+        }
+        .download-btn:hover { background-color: var(--primary-blue-hover); transform: translateY(-2px); }
+        .instructions-box {
+            background: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            text-align: left;
+            line-height: 1.8;
+            color: var(--text-dark);
+            width: 100%;
+        }
+        .instructions-box ol { padding-left: 1.3rem; display: flex; flex-direction: column; gap: 0.4rem; }
+        .os-badge {
+            display: inline-block;
+            background: rgba(30, 64, 175, 0.1);
+            color: var(--primary-blue);
+            padding: 0.2rem 0.9rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+        @media (max-width: 640px) {
+            .brand-logo-icon { height: 34px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="https://www.uv.es/mia1/laura/#" class="brand-logo">
+                <img src="logo-discai.jpg" alt="Logotip DiscAI" class="brand-logo-icon">
+                <span class="brand-title">DiscAI</span>
+                <span class="brand-subtitle" id="txtSub">Discapacitat + IA</span>
+            </a>
+            <div class="nav-controls">
+                <div class="accessibility-nav" title="Accessibilitat: Grandària del text">
+                    <button class="accessibility-btn" onclick="changeFontSize(-1)" title="Reduir lletra">A-</button>
+                    <button class="accessibility-btn" onclick="resetFontSize()" title="Grandària normal">A</button>
+                    <button class="accessibility-btn" onclick="changeFontSize(1)" title="Augmentar lletra">A+</button>
+                </div>
+                <nav class="lang-nav">
+                    <button class="lang-btn active" onclick="setLanguage('ca')">Valencià / Català</button>
+                    <button class="lang-btn" onclick="setLanguage('es')">Castellano</button>
+                    <button class="lang-btn" onclick="setLanguage('en')">English</button>
+                    <button class="lang-btn" onclick="setLanguage('fr')">Français</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-card">
+            <div id="sectionHome" class="tab-content active">
+                <img src="logo-discai.jpg" alt="Logotip de DiscAI: robot en cadira de rodes" class="hero-logo">
+                <div class="profile-container">
+                    <img src="laura.jpg" alt="Laura Soler Azorín" class="profile-img">
+                    <div class="intro-box" id="txtIntro">
+                        Benvinguda/benvingut a la pàgina DiscAI, un web que fa servir un agent-IA per a la integració de persones amb discapacitat, posat en marxa per Laura Soler, diputada en les Corts Valencianes.
+                    </div>
+                </div>
+                <div class="links-container">
+                    <a href="https://www.cortsvalencianes.es/ca-va/composicion/diputados/x/soler_azorin_laura/938cbeb9d9a52027ac059bc7435788ec" target="_blank" class="btn-link" id="linkParliament">
+                        🏛️ La meua activitat parlamentària
+                    </a>
+                    <a href="https://open.spotify.com/show/033WfE2neP9OwU5MJw05Cu" target="_blank" class="btn-link" id="linkPodcast">
+                        🎧 El meu podcast: Independencia sobre ruedas
+                    </a>
+                </div>
+                <div class="chat-container">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message assistant" id="txtWelcomeMsg">Hola! Com puc ajudar-te en aquest projecte avui? Pots escriure o usar el botó de veu.</div>
+                    </div>
+                    <div class="chat-input-area">
+                        <input type="text" id="userInput" class="chat-input" placeholder="Escriu ací o prem el micròfon...">
+                        <button id="micBtn" class="mic-btn" title="Activar entrada per veu">🎤 Veu</button>
+                        <button id="sendBtn" class="chat-btn">Enviar</button>
+                    </div>
+                </div>
+                <div class="download-container">
+                    <h2 class="download-title" id="txtDownloadTitle">Descarrega l'APP DiscAI</h2>
+                    <a href="#" id="downloadBtn" class="download-btn" target="_blank" rel="noopener">⬇️ Descarregar APP DiscAI</a>
+                    <p id="txtDownloadHint" style="color: var(--text-muted); font-size: 0.9rem; margin: 0;"></p>
+                </div>
+            </div>
+            </div>
+        
+    </main>
+    <footer>
+        <p>© 2026 Laura Soler Azorín.</p>
+        <p>email: discaiaproject@gmail.com</p>
+    </footer>
+    <script>
+        let currentFontSize = 1;
+        function changeFontSize(direction) {
+            currentFontSize += direction * 0.1;
+            if (currentFontSize < 0.8) currentFontSize = 0.8;
+            if (currentFontSize > 1.6) currentFontSize = 1.6;
+            document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'rem');
+        }
+        function resetFontSize() {
+            currentFontSize = 1;
+            document.documentElement.style.setProperty('--base-font-size', '1rem');
+        }
+
+        const translations = {
+            ca: {
+                subtitle: "Discapacitat + IA",
+                intro: "Benvinguda/benvingut a la pàgina DiscAI, un web que fa servir un agent-IA per a la integració de persones amb discapacitat, posat en marxa per Laura Soler, diputada en les Corts Valencianes.",
+                parliament: "🏛️ La meua activitat parlamentària",
+                podcast: "🎧 El meu podcast: Independencia sobre ruedas",
+                welcomeMsg: "Hola! Com puc ajudar-te en aquest projecte avui? Pots escriure o usar el botó de veu.",
+                placeholder: "Escriu ací o prem el micròfon...",
+                send: "Enviar",
+                mic: "🎤 Veu",
+                downloadTitle: "Descarrega l'APP DiscAI",
+            },
+            es: {
+                subtitle: "Discapacidad + IA",
+                intro: "Bienvenida/bienvenido a la página DiscAI, una web que utiliza un agente-IA para la integración de personas con discapacidad, puesto en marcha por Laura Soler, diputada en las Cortes Valencianas.",
+                parliament: "🏛️ Mi actividad parlamentaria",
+                podcast: "🎧 Mi podcast: Independencia sobre ruedas",
+                welcomeMsg: "¡Hola! ¿Cómo puedo ayudarte en este proyecto hoy? Puedes escribir o usar el botón de voz.",
+                placeholder: "Escribe aquí o pulsa el micrófono...",
+                send: "Enviar",
+                mic: "🎤 Voz",
+                downloadTitle: "Descarga la APP DiscAI",
+            },
+            en: {
+                subtitle: "Disability + AI",
+                intro: "Welcome to the DiscAI page, a website that uses an AI agent for the integration of people with disabilities, launched by Laura Soler, member of the Valencian Parliament.",
+                parliament: "🏛️ My parliamentary activity",
+                podcast: "🎧 My podcast: Independencia sobre ruedas",
+                welcomeMsg: "Hello! How can I help you with this project today? You can type or use the voice button.",
+                placeholder: "Type here or press the microphone...",
+                send: "Send",
+                mic: "🎤 Voice",
+                downloadTitle: "Download the DiscAI APP",
+            },
+            fr: {
+                subtitle: "Handicap + IA",
+                intro: "Bienvenue sur la page DiscAI, un site web qui utilise un agent IA pour l'intégration des personnes en situation de handicap, lancé par Laura Soler, députée aux Corts Valencianes.",
+                parliament: "🏛️ Mon activité parlementaire",
+                podcast: "🎧 Mon podcast: Independencia sobre ruedas",
+                welcomeMsg: "Bonjour! Comment puis-je vous aider dans ce projet aujourd'hui? Vous pouvez écrire ou utiliser le bouton vocal.",
+                placeholder: "Écrivez ici ou appuyez sur le micro...",
+                send: "Envoyer",
+                mic: "🎤 Voix",
+                downloadTitle: "Téléchargez l'APP DiscAI",
+            }
+        };
+
+
+        // ===== CONFIGURACIÓ APP: canvia aquest URL pel del teu repositori de GitHub =====
+        const GITHUB_REPO = 'https://github.com/projecte-DiscAI/DiscAI';
+        const GITHUB_APK = GITHUB_REPO + '/releases/latest/download/discai.apk';
+
+        let currentLang = 'ca';
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.querySelectorAll('.lang-nav .lang-btn').forEach(btn => btn.classList.remove('active'));
+            if (event && event.target) event.target.classList.add('active');
+
+            document.getElementById('txtSub').textContent = translations[lang].subtitle;
+            document.getElementById('txtIntro').textContent = translations[lang].intro;
+            document.getElementById('linkParliament').textContent = translations[lang].parliament;
+            document.getElementById('linkPodcast').textContent = translations[lang].podcast;
+            document.getElementById('txtWelcomeMsg').textContent = translations[lang].welcomeMsg;
+            document.getElementById('userInput').placeholder = translations[lang].placeholder;
+            document.getElementById('sendBtn').textContent = translations[lang].send;
+            document.getElementById('micBtn').textContent = translations[lang].mic;
+            renderDownload();
+        }
+
+        const downloadContent = {
+            ca: {
+                title: "Descarrega l'APP DiscAI",
+                btn: "⬇️ Descarregar APP DiscAI",
+                hint: { android: "", ios: "Si no s'obre el menú, usa el botó de compartir de Safari i «Afegeix a la pantalla d'inici».", desktop: "Transferix discai.apk al teu mòbil Android i obri-lo per a instal·lar-lo." }
+            },
+            es: {
+                title: "Descarga la APP DiscAI",
+                btn: "⬇️ Descargar APP DiscAI",
+                hint: { android: "", ios: "Si no se abre el menú, usa el botón de compartir de Safari y «Añadir a pantalla de inicio».", desktop: "Transfiere discai.apk a tu móvil Android y ábrelo para instalarlo." }
+            },
+            en: {
+                title: "Download the DiscAI APP",
+                btn: "⬇️ Download DiscAI APP",
+                hint: { android: "", ios: "If the menu doesn't open, use Safari's share button and «Add to Home Screen».", desktop: "Transfer discai.apk to your Android phone and open it to install." }
+            },
+            fr: {
+                title: "Téléchargez l'APP DiscAI",
+                btn: "⬇️ Télécharger l'APP DiscAI",
+                hint: { android: "", ios: "Si le menu ne s'ouvre pas, utilisez le bouton Partager de Safari et «Ajouter à l'écran d'accueil».", desktop: "Transférez discai.apk vers votre téléphone Android et ouvrez-le pour installer." }
+            }
+        };
+
+        function detectOS() {
+            const ua = navigator.userAgent || navigator.vendor || window.opera;
+            if (/android/i.test(ua)) return 'android';
+            if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) return 'ios';
+            return 'desktop';
+        }
+
+        function renderDownload() {
+            const os = detectOS();
+            const c = downloadContent[currentLang];
+            document.getElementById('txtDownloadTitle').textContent = c.title;
+            document.getElementById('txtDownloadHint').textContent = c.hint[os];
+            const btn = document.getElementById('downloadBtn');
+            btn.textContent = c.btn;
+            if (os === 'ios') {
+                btn.href = '#';
+                btn.onclick = (e) => {
+                    e.preventDefault();
+                    if (navigator.share) {
+                        navigator.share({ title: 'DiscAI', url: location.href }).catch(() => {});
+                    }
+                };
+            } else {
+                btn.href = GITHUB_APK;   // descàrrega directa de l'APK, sense visitar GitHub
+                btn.onclick = null;
+            }
+        }
+        renderDownload();
+
+        const sendBtn = document.getElementById('sendBtn');
+        const micBtn = document.getElementById('micBtn');
+        const userInput = document.getElementById('userInput');
+        const chatMessages = document.getElementById('chatMessages');
+
+        function addMessage(text, sender) {
+            const msgDiv = document.createElement('div');
+            msgDiv.classList.add('message', sender);
+            msgDiv.textContent = text;
+            chatMessages.appendChild(msgDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // PETICIÓ REAL AL WORKER DE CLOUDFLARE
+        sendBtn.addEventListener('click', async () => {
+            const text = userInput.value.trim();
+            if (!text) return;
+
+            addMessage(text, 'user');
+            userInput.value = '';
+
+            const loadingId = 'loading-' + Date.now();
+            const loadingDiv = document.createElement('div');
+            loadingDiv.classList.add('message', 'assistant');
+            loadingDiv.id = loadingId;
+            loadingDiv.textContent = currentLang === 'ca' ? "Pensant..." : currentLang === 'es' ? "Pensando..." : currentLang === 'en' ? "Thinking..." : "Réflexion...";
+            chatMessages.appendChild(loadingDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            try {
+                const response = await fetch('https://discai.francesc-j-hernandez.workers.dev/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ message: text, lang: currentLang })
+                });
+
+                const data = await response.json();
+                
+                document.getElementById(loadingId).remove();
+                addMessage(data.response || data.error || "Resposta rebuda.", 'assistant');
+
+            } catch (error) {
+                document.getElementById(loadingId).remove();
+                const errorMsgs = {
+                    ca: "Error de connexió amb l'agent-IA.",
+                    es: "Error de conexión con el agente-IA.",
+                    en: "Connection error with the AI agent.",
+                    fr: "Erreur de connexion avec l'agent IA."
+                };
+                addMessage(errorMsgs[currentLang], 'assistant');
+            }
+        });
+
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendBtn.click();
+        });
+
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (SpeechRecognition) {
+            const recognition = new SpeechRecognition();
+            recognition.continuous = false;
+            recognition.interimResults = false;
+
+            micBtn.addEventListener('click', () => {
+                recognition.lang = currentLang === 'ca' ? 'ca-ES' : currentLang === 'es' ? 'es-ES' : currentLang === 'en' ? 'en-US' : 'fr-FR';
+                recognition.start();
+                micBtn.classList.add('recording');
+                micBtn.textContent = "🎙️ Escoltant...";
+            });
+
+            recognition.onresult = (event) => {
+                const speechToText = event.results[0][0].transcript;
+                userInput.value = speechToText;
+                micBtn.classList.remove('recording');
+                micBtn.textContent = translations[currentLang].mic;
+                sendBtn.click();
+            };
+
+            recognition.onerror = () => {
+                micBtn.classList.remove('recording');
+                micBtn.textContent = translations[currentLang].mic;
+            };
+
+            recognition.onend = () => {
+                micBtn.classList.remove('recording');
+                micBtn.textContent = translations[currentLang].mic;
+            };
+        } else {
+            micBtn.style.display = 'none';
+        }
+    </script>
+
+</body></html>
