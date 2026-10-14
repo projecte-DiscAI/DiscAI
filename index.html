@@ -522,9 +522,12 @@
         };
 
 
-        // ===== CONFIGURACIÓ APP: canvia aquest URL pel del teu repositori de GitHub =====
-        const GITHUB_REPO = 'https://github.com/projecte-DiscAI/DiscAI';
-        const GITHUB_APK = GITHUB_REPO + '/releases/latest/download/discai.apk';
+        // Instal·lació PWA: capturem l'esdeveniment que Chrome/Android llança quan l'app és instal·lable
+        let deferredPrompt = null;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+        });
 
         let currentLang = 'ca';
         function setLanguage(lang) {
@@ -547,22 +550,22 @@
             ca: {
                 title: "Descarrega l'APP DiscAI",
                 btn: "⬇️ Descarregar APP DiscAI",
-                hint: { android: "", ios: "Si no s'obre el menú, usa el botó de compartir de Safari i «Afegeix a la pantalla d'inici».", desktop: "Transferix discai.apk al teu mòbil Android i obri-lo per a instal·lar-lo." }
+                hint: { android: "Si el botó no respon, toca el menú del navegador (⋮) → «Instal·lar app».", ios: "Si no s'obre el menú, usa el botó de compartir de Safari i «Afegeix a la pantalla d'inici».", desktop: "Transferix discai.apk al teu mòbil Android i obri-lo per a instal·lar-lo." }
             },
             es: {
                 title: "Descarga la APP DiscAI",
                 btn: "⬇️ Descargar APP DiscAI",
-                hint: { android: "", ios: "Si no se abre el menú, usa el botón de compartir de Safari y «Añadir a pantalla de inicio».", desktop: "Transfiere discai.apk a tu móvil Android y ábrelo para instalarlo." }
+                hint: { android: "Si el botón no responde, toca el menú del navegador (⋮) → «Instalar app».", ios: "Si no se abre el menú, usa el botón de compartir de Safari y «Añadir a pantalla de inicio».", desktop: "Transfiere discai.apk a tu móvil Android y ábrelo para instalarlo." }
             },
             en: {
                 title: "Download the DiscAI APP",
                 btn: "⬇️ Download DiscAI APP",
-                hint: { android: "", ios: "If the menu doesn't open, use Safari's share button and «Add to Home Screen».", desktop: "Transfer discai.apk to your Android phone and open it to install." }
+                hint: { android: "If the button does nothing, tap the browser menu (⋮) → «Install app».", ios: "If the menu doesn't open, use Safari's share button and «Add to Home Screen».", desktop: "Transfer discai.apk to your Android phone and open it to install." }
             },
             fr: {
                 title: "Téléchargez l'APP DiscAI",
                 btn: "⬇️ Télécharger l'APP DiscAI",
-                hint: { android: "", ios: "Si le menu ne s'ouvre pas, utilisez le bouton Partager de Safari et «Ajouter à l'écran d'accueil».", desktop: "Transférez discai.apk vers votre téléphone Android et ouvrez-le pour installer." }
+                hint: { android: "Si le bouton ne répond pas, touchez le menu du navigateur (⋮) → «Installer l'application».", ios: "Si le menu ne s'ouvre pas, utilisez le bouton Partager de Safari et «Ajouter à l'écran d'accueil».", desktop: "Transférez discai.apk vers votre téléphone Android et ouvrez-le pour installer." }
             }
         };
 
@@ -580,18 +583,17 @@
             document.getElementById('txtDownloadHint').textContent = c.hint[os];
             const btn = document.getElementById('downloadBtn');
             btn.textContent = c.btn;
-            if (os === 'ios') {
-                btn.href = '#';
-                btn.onclick = (e) => {
-                    e.preventDefault();
-                    if (navigator.share) {
-                        navigator.share({ title: 'DiscAI', url: location.href }).catch(() => {});
-                    }
-                };
-            } else {
-                btn.href = GITHUB_APK;   // descàrrega directa de l'APK, sense visitar GitHub
-                btn.onclick = null;
-            }
+            btn.href = '#';
+            btn.onclick = async (e) => {
+                e.preventDefault();
+                if (os === 'ios') {
+                    if (navigator.share) navigator.share({ title: 'DiscAI', url: location.href }).catch(() => {});
+                } else if (deferredPrompt) {
+                    deferredPrompt.prompt();
+                    await deferredPrompt.userChoice;
+                    deferredPrompt = null;
+                }
+            };
         }
         renderDownload();
 
