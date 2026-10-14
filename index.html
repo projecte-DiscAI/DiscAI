@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<!-- saved from url=(0039)https://www.uv.es/mia1/laura/index.html -->
+<!-- saved from url=(0029)https://www.uv.es/mia1/laura/ -->
 <html lang="ca"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DiscAI — Discapacitat + IA</title>
-    <link rel="manifest" href="https://www.uv.es/mia1/laura/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#1e40af">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="DiscAI">
-    <link rel="icon" href="https://www.uv.es/mia1/laura/icons/favicon.ico" sizes="16x16 32x32 48x48">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://www.uv.es/mia1/laura/icons/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="https://www.uv.es/mia1/laura/icons/icon-192.png">
-    <link rel="apple-touch-icon" href="https://www.uv.es/mia1/laura/icons/apple-touch-icon.png">
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="./DiscAI — Discapacitat + IA_files/css2" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary-blue: #1e40af;
@@ -400,7 +400,7 @@
     <header>
         <div class="header-container">
             <a href="https://www.uv.es/mia1/laura/#" class="brand-logo">
-                <img src="./DiscAI — Discapacitat + IA_files/logo-discai.jpg" alt="Logotip DiscAI" class="brand-logo-icon">
+                <img src="logo-discai.jpg" alt="Logotip DiscAI" class="brand-logo-icon">
                 <span class="brand-title">DiscAI</span>
                 <span class="brand-subtitle" id="txtSub">Discapacitat + IA</span>
             </a>
@@ -422,9 +422,9 @@
     <main>
         <div class="main-card">
             <div id="sectionHome" class="tab-content active">
-                <img src="./DiscAI — Discapacitat + IA_files/logo-discai.jpg" alt="Logotip de DiscAI: robot en cadira de rodes" class="hero-logo">
+                <img src="logo-discai.jpg" alt="Logotip de DiscAI: robot en cadira de rodes" class="hero-logo">
                 <div class="profile-container">
-                    <img src="./DiscAI — Discapacitat + IA_files/laura.jpg" alt="Laura Soler Azorín" class="profile-img">
+                    <img src="laura.jpg" alt="Laura Soler Azorín" class="profile-img">
                     <div class="intro-box" id="txtIntro">
                         Benvinguda/benvingut a la pàgina DiscAI, un web que fa servir un agent-IA per a la integració de persones amb discapacitat, posat en marxa per Laura Soler, diputada en les Corts Valencianes.
                     </div>
@@ -447,12 +447,10 @@
                         <button id="sendBtn" class="chat-btn">Enviar</button>
                     </div>
                 </div>
-                <div class="download-container" id="downloadContainer">
-                    <span class="os-badge" id="osBadge">Ordinador detectat</span>
+                <div class="download-container">
                     <h2 class="download-title" id="txtDownloadTitle">Descarrega l'APP DiscAI</h2>
-                    <p id="txtDownloadSub" style="color: var(--text-muted);">Des de l'ordinador pots descarregar l'APP o visitar el repositori.</p>
-                    <a href="https://github.com/projecte-DiscAI/DiscAI" id="downloadBtn" class="download-btn" target="_blank" rel="noopener">💻 Anar al repositori de GitHub</a>
-                    <div class="instructions-box" id="instructionsBox"><ol><li>Si vols l'APP per a mòbil, obri aquesta pàgina des del telèfon.</li><li>Al repositori de GitHub trobaràs el codi font i les versions (releases).</li><li>Per a Android: descarrega l'arxiu discai.apk de l'última release.</li><li>Per a iPhone: obri la pàgina a Safari i segueix les instruccions d'instal·lació.</li></ol></div>
+                    <a href="#" id="downloadBtn" class="download-btn" target="_blank" rel="noopener">⬇️ Descarregar APP DiscAI</a>
+                    <p id="txtDownloadHint" style="color: var(--text-muted); font-size: 0.9rem; margin: 0;"></p>
                 </div>
             </div>
             </div>
@@ -485,9 +483,7 @@
                 placeholder: "Escriu ací o prem el micròfon...",
                 send: "Enviar",
                 mic: "🎤 Veu",
-                micTitle: "Activar entrada per veu",
                 downloadTitle: "Descarrega l'APP DiscAI",
-                p2Desc: "Simplifica i resumeix textos legals complexos a un format de lectura fàcil."
             },
             es: {
                 subtitle: "Discapacidad + IA",
@@ -498,9 +494,7 @@
                 placeholder: "Escribe aquí o pulsa el micrófono...",
                 send: "Enviar",
                 mic: "🎤 Voz",
-                micTitle: "Activar entrada por voz",
                 downloadTitle: "Descarga la APP DiscAI",
-                p2Desc: "Simplifica y resume textos legales complejos a un formato de lectura fácil."
             },
             en: {
                 subtitle: "Disability + AI",
@@ -511,9 +505,7 @@
                 placeholder: "Type here or press the microphone...",
                 send: "Send",
                 mic: "🎤 Voice",
-                micTitle: "Enable voice input",
                 downloadTitle: "Download the DiscAI APP",
-                p2Desc: "Simplify and summarize complex legal texts into an easy-to-read format."
             },
             fr: {
                 subtitle: "Handicap + IA",
@@ -524,15 +516,14 @@
                 placeholder: "Écrivez ici ou appuyez sur le micro...",
                 send: "Envoyer",
                 mic: "🎤 Voix",
-                micTitle: "Activer la saisie vocale",
                 downloadTitle: "Téléchargez l'APP DiscAI",
-                p2Desc: "Simplifiez et résumez des textes juridiques complexes en un format de lecture facile."
             }
         };
 
 
         // ===== CONFIGURACIÓ APP: canvia aquest URL pel del teu repositori de GitHub =====
-        const GITHUB_APK = 'https://github.com/projecte-DiscAI/DiscAI/releases/latest/download/discai.apk';
+        const GITHUB_REPO = 'https://github.com/projecte-DiscAI/DiscAI';
+        const GITHUB_APK = GITHUB_REPO + '/releases/latest/download/discai.apk';
 
         let currentLang = 'ca';
         function setLanguage(lang) {
@@ -554,131 +545,23 @@
         const downloadContent = {
             ca: {
                 title: "Descarrega l'APP DiscAI",
-                badge: { android: "Sistema detectat: Android", ios: "Sistema detectat: iOS (iPhone/iPad)", desktop: "Ordinador detectat" },
-                sub: {
-                    android: "Instal·la l'aplicació oficial de DiscAI al teu mòbil Android.",
-                    ios: "A l'iPhone, l'APP s'instal·la com a aplicació web (PWA) des de Safari.",
-                    desktop: "Des de l'ordinador pots descarregar l'APP o visitar el repositori."
-                },
-                btn: { android: "⬇️ Descarregar APP (Android)", ios: "📲 Instal·lar APP", desktop: "💻 Anar al repositori de GitHub" },
-                steps: {
-                    android: [
-                        "Prem el botó «Descarregar APP» per baixar l'arxiu discai.apk.",
-                        "Si el navegador ho demana, accepta la descàrrega.",
-                        "Obri l'arxiu descarregat (discai.apk).",
-                        "Activa «Permetre instal·lació d'apps d'origen desconegut» si el sistema ho sol·licita.",
-                        "Prem «Instal·lar» i, quan acabe, obri l'APP DiscAI."
-                    ],
-                    ios: [
-                        "Obri aquesta pàgina des de Safari.",
-                        "Prem el botó «Instal·lar APP» (o el botó de compartir de Safari).",
-                        "Selecciona «Afegeix a la pantalla d'inici».",
-                        "Confirma amb «Afegeix».",
-                        "L'icona de DiscAI apareixerà a la pantalla d'inici com qualsevol APP."
-                    ],
-                    desktop: [
-                        "Si vols l'APP per a mòbil, obri aquesta pàgina des del telèfon.",
-                        "Al repositori de GitHub trobaràs el codi font i les versions (releases).",
-                        "Per a Android: descarrega l'arxiu discai.apk de l'última release.",
-                        "Per a iPhone: obri la pàgina a Safari i segueix les instruccions d'instal·lació."
-                    ]
-                }
+                btn: "⬇️ Descarregar APP DiscAI",
+                hint: { android: "", ios: "Si no s'obre el menú, usa el botó de compartir de Safari i «Afegeix a la pantalla d'inici».", desktop: "Transferix discai.apk al teu mòbil Android i obri-lo per a instal·lar-lo." }
             },
             es: {
                 title: "Descarga la APP DiscAI",
-                badge: { android: "Sistema detectado: Android", ios: "Sistema detectado: iOS (iPhone/iPad)", desktop: "Ordenador detectado" },
-                sub: {
-                    android: "Instala la aplicación oficial de DiscAI en tu móvil Android.",
-                    ios: "En el iPhone, la APP se instala como aplicación web (PWA) desde Safari.",
-                    desktop: "Desde el ordenador puedes descargar la APP o visitar el repositorio."
-                },
-                btn: { android: "⬇️ Descargar APP (Android)", ios: "📲 Instalar APP", desktop: "💻 Ir al repositorio de GitHub" },
-                steps: {
-                    android: [
-                        "Pulsa el botón «Descargar APP» para bajar el archivo discai.apk.",
-                        "Si el navegador lo pide, acepta la descarga.",
-                        "Abre el archivo descargado (discai.apk).",
-                        "Activa «Permitir instalación de apps de origen desconocido» si el sistema lo solicita.",
-                        "Pulsa «Instalar» y, cuando termine, abre la APP DiscAI."
-                    ],
-                    ios: [
-                        "Abre esta página desde Safari.",
-                        "Pulsa el botón «Instalar APP» (o el botón de compartir de Safari).",
-                        "Selecciona «Añadir a pantalla de inicio».",
-                        "Confirma con «Añadir».",
-                        "El icono de DiscAI aparecerá en la pantalla de inicio como cualquier APP."
-                    ],
-                    desktop: [
-                        "Si quieres la APP para móvil, abre esta página desde el teléfono.",
-                        "En el repositorio de GitHub encontrarás el código fuente y las versiones (releases).",
-                        "Para Android: descarga el archivo discai.apk de la última release.",
-                        "Para iPhone: abre la página en Safari y sigue las instrucciones de instalación."
-                    ]
-                }
+                btn: "⬇️ Descargar APP DiscAI",
+                hint: { android: "", ios: "Si no se abre el menú, usa el botón de compartir de Safari y «Añadir a pantalla de inicio».", desktop: "Transfiere discai.apk a tu móvil Android y ábrelo para instalarlo." }
             },
             en: {
                 title: "Download the DiscAI APP",
-                badge: { android: "Detected system: Android", ios: "Detected system: iOS (iPhone/iPad)", desktop: "Desktop detected" },
-                sub: {
-                    android: "Install the official DiscAI app on your Android phone.",
-                    ios: "On iPhone, the app installs as a web app (PWA) from Safari.",
-                    desktop: "From your computer you can download the app or visit the repository."
-                },
-                btn: { android: "⬇️ Download APP (Android)", ios: "📲 Install APP", desktop: "💻 Go to GitHub repository" },
-                steps: {
-                    android: [
-                        "Tap «Download APP» to get the discai.apk file.",
-                        "Accept the download if your browser asks.",
-                        "Open the downloaded file (discai.apk).",
-                        "Enable «Allow installation from unknown sources» if prompted.",
-                        "Tap «Install» and then open the DiscAI app."
-                    ],
-                    ios: [
-                        "Open this page in Safari.",
-                        "Tap «Install APP» (or Safari's share button).",
-                        "Select «Add to Home Screen».",
-                        "Confirm with «Add».",
-                        "The DiscAI icon will appear on your Home Screen like any app."
-                    ],
-                    desktop: [
-                        "If you want the mobile app, open this page on your phone.",
-                        "The GitHub repository contains the source code and releases.",
-                        "For Android: download discai.apk from the latest release.",
-                        "For iPhone: open this page in Safari and follow the install steps."
-                    ]
-                }
+                btn: "⬇️ Download DiscAI APP",
+                hint: { android: "", ios: "If the menu doesn't open, use Safari's share button and «Add to Home Screen».", desktop: "Transfer discai.apk to your Android phone and open it to install." }
             },
             fr: {
                 title: "Téléchargez l'APP DiscAI",
-                badge: { android: "Système détecté : Android", ios: "Système détecté : iOS (iPhone/iPad)", desktop: "Ordinateur détecté" },
-                sub: {
-                    android: "Installez l'application officielle DiscAI sur votre téléphone Android.",
-                    ios: "Sur iPhone, l'APP s'installe comme application web (PWA) depuis Safari.",
-                    desktop: "Depuis l'ordinateur, vous pouvez télécharger l'APP ou visiter le dépôt."
-                },
-                btn: { android: "⬇️ Télécharger l'APP (Android)", ios: "📲 Installer l'APP", desktop: "💻 Aller au dépôt GitHub" },
-                steps: {
-                    android: [
-                        "Appuyez sur «Télécharger l'APP» pour obtenir le fichier discai.apk.",
-                        "Acceptez le téléchargement si le navigateur le demande.",
-                        "Ouvrez le fichier téléchargé (discai.apk).",
-                        "Activez «Autoriser l'installation d'applications de sources inconnues» si demandé.",
-                        "Appuyez sur «Installer», puis ouvrez l'APP DiscAI."
-                    ],
-                    ios: [
-                        "Ouvrez cette page dans Safari.",
-                        "Appuyez sur «Installer l'APP» (ou le bouton Partager de Safari).",
-                        "Sélectionnez «Ajouter à l'écran d'accueil».",
-                        "Confirmez avec «Ajouter».",
-                        "L'icône DiscAI apparaîtra sur l'écran d'accueil comme n'importe quelle APP."
-                    ],
-                    desktop: [
-                        "Pour l'APP mobile, ouvrez cette page sur votre téléphone.",
-                        "Le dépôt GitHub contient le code source et les versions (releases).",
-                        "Pour Android : téléchargez discai.apk depuis la dernière release.",
-                        "Pour iPhone : ouvrez la page dans Safari et suivez les instructions."
-                    ]
-                }
+                btn: "⬇️ Télécharger l'APP DiscAI",
+                hint: { android: "", ios: "Si le menu ne s'ouvre pas, utilisez le bouton Partager de Safari et «Ajouter à l'écran d'accueil».", desktop: "Transférez discai.apk vers votre téléphone Android et ouvrez-le pour installer." }
             }
         };
 
@@ -689,52 +572,25 @@
             return 'desktop';
         }
 
-        function autoDownload(url) {
-            const iframe = document.createElement('iframe');
-            iframe.style.display = 'none';
-            iframe.src = url;
-            document.body.appendChild(iframe);
-            setTimeout(() => { if (iframe.parentNode) iframe.parentNode.removeChild(iframe); }, 30000);
-        }
-
         function renderDownload() {
             const os = detectOS();
             const c = downloadContent[currentLang];
-            const container = document.getElementById('downloadContainer');
-
-            // En escritorio se oculta la sección de descarga (solo móvil Android/iOS)
-            if (os === 'desktop') {
-                container.style.display = 'none';
-                return;
-            }
-            container.style.display = 'flex';
-
-            document.getElementById('osBadge').textContent = c.badge[os];
             document.getElementById('txtDownloadTitle').textContent = c.title;
-            document.getElementById('txtDownloadSub').textContent = c.sub[os];
+            document.getElementById('txtDownloadHint').textContent = c.hint[os];
             const btn = document.getElementById('downloadBtn');
-            btn.textContent = c.btn[os];
-
-            if (os === 'android') {
-                // Android: descarga automática del APK + botón para reintentar
-                btn.href = GITHUB_APK;
-                btn.target = '_blank';
-                btn.onclick = null;
-                autoDownload(GITHUB_APK);
-            } else {
-                // iOS (iPhone/iPad): no se puede descargar un APK; se instala como PWA
+            btn.textContent = c.btn;
+            if (os === 'ios') {
                 btn.href = '#';
-                btn.target = '_self';
                 btn.onclick = (e) => {
                     e.preventDefault();
                     if (navigator.share) {
                         navigator.share({ title: 'DiscAI', url: location.href }).catch(() => {});
                     }
                 };
+            } else {
+                btn.href = GITHUB_APK;   // descàrrega directa de l'APK, sense visitar GitHub
+                btn.onclick = null;
             }
-
-            const box = document.getElementById('instructionsBox');
-            box.innerHTML = '<ol>' + c.steps[os].map(s => '<li>' + s + '</li>').join('') + '</ol>';
         }
         renderDownload();
 
